@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4; /* Color de fondo claro */
+    padding-bottom: 60px; /* Espacio para el pie de página */
 }
 
 /* Encabezado */
@@ -117,11 +118,11 @@ footer {
     background: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
+    padding: 20px 10px;
+    position: relative;
     bottom: 0;
     left: 0;
+    width: 100%;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -136,4 +137,12 @@ footer {
 
 .social-media a:hover {
     color: #e1306c; /* Color de Instagram en hover */
+}
+
+/* Ajustes para el tamaño de los botones en dispositivos móviles */
+@media (max-width: 600px) {
+    .availability-button .button {
+        padding: 0.5rem 1rem;
+        font-size: 14px;
+    }
 }
