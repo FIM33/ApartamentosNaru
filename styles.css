@@ -67,6 +67,8 @@ header h1 {
     max-width: 100%;
     margin: 0 auto;
     overflow: hidden;
+    border: 2px solid #ddd; /* Optional: border for better visibility */
+    border-radius: 8px; /* Optional: rounded corners */
 }
 
 .carousel-images {
@@ -85,6 +87,7 @@ header h1 {
 .carousel-image img {
     max-width: 100%;
     height: auto;
+    border-radius: 8px; /* Optional: rounded corners for images */
 }
 
 .carousel-controls {
@@ -116,8 +119,8 @@ header h1 {
 .services ul {
     list-style: none;
     padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
@@ -125,6 +128,8 @@ header h1 {
     display: flex;
     align-items: center;
     font-size: 1rem;
+    flex: 1 1 calc(50% - 1rem); /* Two columns with gap */
+    box-sizing: border-box;
 }
 
 .services i {
@@ -159,8 +164,8 @@ footer a:hover {
         font-size: 1.5rem;
     }
     
-    .services i {
-        font-size: 1rem;
+    .services li {
+        flex: 1 1 100%; /* Stack items in a single column on small screens */
     }
     
     .intro p {
