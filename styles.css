@@ -1,0 +1,118 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+h1, h2 {
+    margin-bottom: 0.5em;
+}
+
+section {
+    padding: 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    background: #f4f4f4;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+
+.intro {
+    text-align: center;
+}
+
+/* Carrusel */
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: 2em auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    min-width: 100%;
+}
+
+.carousel-image img {
+    width: 100%;
+    display: block;
+}
+
+/* Controles del carrusel */
+.carousel-controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.carousel-controls label {
+    width: 12px;
+    height: 12px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/* Estilo para el radio buttons invisibles */
+input[type="radio"] {
+    display: none;
+}
+
+/* Posicionamiento de las imágenes del carrusel */
+#img1-1:checked ~ .carousel-images {
+    transform: translateX(0);
+}
+#img1-2:checked ~ .carousel-images {
+    transform: translateX(-100%);
+}
+#img1-3:checked ~ .carousel-images {
+    transform: translateX(-200%);
+}
+#img1-4:checked ~ .carousel-images {
+    transform: translateX(-300%);
+}
+#img1-5:checked ~ .carousel-images {
+    transform: translateX(-400%);
+}
+
+#img2-1:checked ~ .carousel-images {
+    transform: translateX(0);
+}
+#img2-2:checked ~ .carousel-images {
+    transform: translateX(-100%);
+}
+#img2-3:checked ~ .carousel-images {
+    transform: translateX(-200%);
+}
+#img2-4:checked ~ .carousel-images {
+    transform: translateX(-300%);
+}
+#img2-5:checked ~ .carousel-images {
+    transform: translateX(-400%);
+}
