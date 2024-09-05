@@ -116,14 +116,15 @@ section {
 
 /* Pie de página */
 footer {
-    background: #333;
+     background: #333;
     color: #fff;
     text-align: center;
     padding: 20px 10px;
     position: static; /* Pie de página en su lugar normal */
     width: 100%;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    margin-top: 20px; /* Espacio arriba del pie de página */
+    box-sizing: border-box; /* Asegura que el padding no cause desbordamiento */
+    margin: 0; /* Asegura que no haya márgenes adicionales que causen desbordamiento */
 }
 
 /* Icono de Instagram en el pie de página */
