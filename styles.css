@@ -1,174 +1,145 @@
-/* General */
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartamentos en Alquiler</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Explora nuestros modernos apartamentos en alquiler en el corazón de la ciudad. Encuentra el lugar perfecto para tu estancia con imágenes detalladas y descripciones.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Apartamentos en Alquiler</h1>
+    </header>
 
-a {
-    color: #007BFF;
-    text-decoration: none;
-}
+    <!-- Sección principal -->
+    <section class="intro">
+        <h2>Bienvenido a nuestros apartamentos</h2>
+        <p>Disfruta de una estancia confortable en nuestros apartamentos situados en el corazón de la ciudad.</p>
+    </section>
 
-a:hover {
-    text-decoration: underline;
-}
+    <!-- Apartamento 1 -->
+    <section class="apartment">
+        <h2>Apartamento 1</h2>
+        <p>Este moderno apartamento cuenta con todas las comodidades que necesitas para una estancia perfecta.</p>
+        
+        <!-- Carrusel de imágenes -->
+        <div class="carousel">
+            <div class="carousel-images">
+                <div class="carousel-image">
+                    <img src="apartamento1-1.jpg" alt="Foto 1 del Apartamento 1">
+                </div>
+                <div class="carousel-image">
+                    <img src="apartamento1-2.jpg" alt="Foto 2 del Apartamento 1">
+                </div>
+                <div class="carousel-image">
+                    <img src="apartamento1-3.jpg" alt="Foto 3 del Apartamento 1">
+                </div>
+                <div class="carousel-image">
+                    <img src="apartamento1-4.jpg" alt="Foto 4 del Apartamento 1">
+                </div>
+                <div class="carousel-image">
+                    <img src="apartamento1-5.jpg" alt="Foto 5 del Apartamento 1">
+                </div>
+            </div>
+            
+            <!-- Controles del carrusel -->
+            <div class="carousel-controls">
+                <label for="img1-1" aria-label="Imagen 1">&#9664;</label>
+                <label for="img1-2" aria-label="Imagen 2">&#9654;</label>
+            </div>
+        </div>
 
-header {
-    background: #343A40;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
+        <!-- Servicios del apartamento 1 -->
+        <div class="services">
+            <h3>Servicios Incluidos</h3>
+            <ul>
+                <li><i class="fas fa-shower"></i> Baño privado</li>
+                <li><i class="fas fa-temperature-high"></i> Agua caliente</li>
+                <li><i class="fas fa-wifi"></i> WiFi gratuito</li>
+                <li><i class="fas fa-snowflake"></i> Aire acondicionado</li>
+                <li><i class="fas fa-thermometer-half"></i> Calefacción</li>
+                <li><i class="fas fa-tv"></i> Televisión por cable</li>
+                <li><i class="fas fa-utensils"></i> Cocina equipada</li>
+                <li><i class="fas fa-tshirt"></i> Lavadora</li>
+                <li><i class="fas fa-user-secret"></i> Secador de pelo</li>
+                <li><i class="fas fa-iron"></i> Plancha y tabla de planchar</li>
+                <li><i class="fas fa-dumbbell"></i> Acceso a gimnasio</li>
+                <li><i class="fas fa-car"></i> Parking gratuito</li>
+                <li><i class="fas fa-broom"></i> Servicio de limpieza diario</li>
+                <li><i class="fas fa-bread-slice"></i> Desayuno incluido</li>
+                <li><i class="fas fa-bed"></i> Ropa de cama y toallas</li>
+                <li><i class="fas fa-laptop"></i> Área de trabajo</li>
+            </ul>
+        </div>
+    </section>
 
-header h1 {
-    margin: 0;
-    font-size: 2rem;
-}
+    <!-- Apartamento 2 -->
+    <section class="apartment">
+        <h2>Apartamento 2</h2>
+        <p>Un acogedor apartamento con vistas espectaculares, perfecto para desconectar y relajarse.</p>
+        
+        <!-- Carrusel de imágenes -->
+        <div class="carousel">
+            <div class="carousel-images">
+                <div class="carousel-image">
+                    <img src="apartamento2-1.jpg" alt="Foto 1 del Apartamento 2">
+                </div>
+                <div class="carousel-image">
+                    <img src="apartamento2-2.jpg" alt="Foto 2 del Apartamento 2">
+                </div>
+                <div class="carousel-image">
+                    <img src="apartamento2-3.jpg" alt="Foto 3 del Apartamento 2">
+                </div>
+                <div class="carousel-image">
+                    <img src="apartamento2-4.jpg" alt="Foto 4 del Apartamento 2">
+                </div>
+                <div class="carousel-image">
+                    <img src="apartamento2-5.jpg" alt="Foto 5 del Apartamento 2">
+                </div>
+            </div>
 
-.intro {
-    background: #f8f9fa;
-    padding: 2rem 1rem;
-    text-align: center;
-}
+            <!-- Controles del carrusel -->
+            <div class="carousel-controls">
+                <label for="img2-1" aria-label="Imagen 1">&#9664;</label>
+                <label for="img2-2" aria-label="Imagen 2">&#9654;</label>
+            </div>
+        </div>
 
-.intro h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
+        <!-- Servicios del apartamento 2 -->
+        <div class="services">
+            <h3>Servicios Incluidos</h3>
+            <ul>
+                <li><i class="fas fa-shower"></i> Baño privado</li>
+                <li><i class="fas fa-temperature-high"></i> Agua caliente</li>
+                <li><i class="fas fa-wifi"></i> WiFi gratuito</li>
+                <li><i class="fas fa-snowflake"></i> Aire acondicionado</li>
+                <li><i class="fas fa-thermometer-half"></i> Calefacción</li>
+                <li><i class="fas fa-tv"></i> Televisión por cable</li>
+                <li><i class="fas fa-utensils"></i> Cocina equipada</li>
+                <li><i class="fas fa-tshirt"></i> Lavadora</li>
+                <li><i class="fas fa-user-secret"></i> Secador de pelo</li>
+                <li><i class="fas fa-iron"></i> Plancha y tabla de planchar</li>
+                <li><i class="fas fa-dumbbell"></i> Acceso a gimnasio</li>
+                <li><i class="fas fa-car"></i> Parking gratuito</li>
+                <li><i class="fas fa-broom"></i> Servicio de limpieza diario</li>
+                <li><i class="fas fa-bread-slice"></i> Desayuno incluido</li>
+                <li><i class="fas fa-bed"></i> Ropa de cama y toallas</li>
+                <li><i class="fas fa-laptop"></i> Área de trabajo</li>
+            </ul>
+        </div>
+    </section>
 
-.intro p {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1rem;
-}
-
-.apartment {
-    padding: 2rem 1rem;
-}
-
-.apartment h2 {
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
-}
-
-.apartment p {
-    font-size: 1rem;
-    max-width: 800px;
-    margin: 0 auto;
-    margin-bottom: 2rem;
-}
-
-/* Carrusel */
-.carousel {
-    position: relative;
-    max-width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-    border: 2px solid #ddd; /* Optional: border for better visibility */
-    border-radius: 8px; /* Optional: rounded corners */
-}
-
-.carousel-images {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.carousel-image {
-    min-width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.carousel-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px; /* Optional: rounded corners for images */
-}
-
-.carousel-controls {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-    padding: 0 1rem;
-}
-
-.carousel-controls label {
-    cursor: pointer;
-    font-size: 2rem;
-    color: #007BFF;
-}
-
-/* Servicios */
-.services {
-    margin-top: 2rem;
-}
-
-.services h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.services ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.services li {
-    display: flex;
-    align-items: center;
-    font-size: 1rem;
-    flex: 1 1 calc(50% - 1rem); /* Two columns with gap */
-    box-sizing: border-box;
-}
-
-.services i {
-    font-size: 1.2rem;
-    color: #007BFF;
-    margin-right: 0.5rem;
-}
-
-/* Footer */
-footer {
-    background: #343A40;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-footer p {
-    margin: 0.5rem 0;
-}
-
-footer a {
-    color: #007BFF;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .carousel-controls label {
-        font-size: 1.5rem;
-    }
-    
-    .services li {
-        flex: 1 1 100%; /* Stack items in a single column on small screens */
-    }
-    
-    .intro p {
-        font-size: 0.9rem;
-    }
-}
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Apartamentos en Alquiler. Todos los derechos reservados.</p>
+        <div class="social-media">
+            <a href="https://www.instagram.com/tu-perfil" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
