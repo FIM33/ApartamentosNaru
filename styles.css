@@ -85,9 +85,9 @@ section {
 }
 
 /* Ajustes para pantallas más pequeñas */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .services-list {
-        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+        grid-template-columns: 1fr; /* Una sola columna en pantallas más pequeñas */
     }
 }
 
@@ -119,10 +119,9 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 10px;
-    position: relative; /* Asegura que el pie esté en su lugar normal */
+    position: static; /* Pie de página en su lugar normal */
     width: 100%;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    margin-top: 20px; /* Espacio antes del pie de página */
 }
 
 /* Icono de Instagram en el pie de página */
