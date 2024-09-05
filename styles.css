@@ -6,6 +6,7 @@ body {
     padding: 0;
     background-color: #f4f4f4; /* Color de fondo claro */
     padding-bottom: 60px; /* Espacio para el pie de página */
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }
 
 /* Encabezado */
@@ -122,6 +123,7 @@ footer {
     position: static; /* Pie de página en su lugar normal */
     width: 100%;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Espacio arriba del pie de página */
 }
 
 /* Icono de Instagram en el pie de página */
@@ -133,7 +135,6 @@ footer {
     display: inline-block;
     padding: 10px; /* Espacio adicional alrededor del icono */
 }
-
 
 .social-media a:hover {
     color: #e1306c; /* Color de Instagram en hover */
