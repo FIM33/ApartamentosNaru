@@ -1,118 +1,138 @@
-/* Estilos generales */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
     color: #333;
+    background-color: #f4f4f4;
 }
 
 header {
-    background: #4CAF50;
-    color: white;
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
     text-align: center;
-    padding: 1em 0;
 }
 
-h1, h2 {
-    margin-bottom: 0.5em;
-}
-
-section {
-    padding: 2em;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-footer {
-    text-align: center;
-    background: #f4f4f4;
-    padding: 1em 0;
-    margin-top: 2em;
+header h1 {
+    margin: 0;
 }
 
 .intro {
+    padding: 2rem;
     text-align: center;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Apartamentos */
+.apartment {
+    background: #fff;
+    border-radius: 8px;
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 1200px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.apartment h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.apartment p {
+    font-size: 1.1rem;
+    color: #666;
 }
 
 /* Carrusel */
 .carousel {
     position: relative;
-    max-width: 100%;
-    margin: 2em auto;
     overflow: hidden;
+    border-radius: 8px;
 }
 
 .carousel-images {
     display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carousel-image {
-    min-width: 100%;
+    transition: transform 0.5s ease;
 }
 
 .carousel-image img {
     width: 100%;
-    display: block;
+    border-radius: 8px;
 }
 
-/* Controles del carrusel */
 .carousel-controls {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .carousel-controls label {
-    width: 12px;
-    height: 12px;
-    background-color: #ddd;
-    border-radius: 50%;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
     margin: 0 5px;
+    background: #ddd;
+    border-radius: 50%;
     cursor: pointer;
 }
 
-/* Estilo para el radio buttons invisibles */
+.carousel-controls label:hover {
+    background: #666;
+}
+
 input[type="radio"] {
     display: none;
 }
 
-/* Posicionamiento de las imágenes del carrusel */
-#img1-1:checked ~ .carousel-images {
-    transform: translateX(0);
-}
-#img1-2:checked ~ .carousel-images {
+input[type="radio"]:checked + .carousel-images {
     transform: translateX(-100%);
-}
-#img1-3:checked ~ .carousel-images {
-    transform: translateX(-200%);
-}
-#img1-4:checked ~ .carousel-images {
-    transform: translateX(-300%);
-}
-#img1-5:checked ~ .carousel-images {
-    transform: translateX(-400%);
 }
 
-#img2-1:checked ~ .carousel-images {
-    transform: translateX(0);
+/* Servicios */
+.services {
+    margin-top: 2rem;
 }
-#img2-2:checked ~ .carousel-images {
-    transform: translateX(-100%);
+
+.services h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
-#img2-3:checked ~ .carousel-images {
-    transform: translateX(-200%);
+
+.services ul {
+    list-style-type: none;
+    padding: 0;
 }
-#img2-4:checked ~ .carousel-images {
-    transform: translateX(-300%);
+
+.services li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #555;
 }
-#img2-5:checked ~ .carousel-images {
-    transform: translateX(-400%);
+
+.services i {
+    color: #3498db;
+    margin-right: 10px;
+}
+
+/* Pie de página */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
 }
