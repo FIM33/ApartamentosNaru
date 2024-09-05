@@ -66,34 +66,41 @@ header h1 {
     position: relative;
     max-width: 100%;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .carousel-images {
     display: flex;
-    overflow: hidden;
-    position: relative;
+    transition: transform 0.5s ease;
 }
 
 .carousel-image {
     min-width: 100%;
-    transition: transform 0.5s ease;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.carousel-images img {
-    width: 100%;
-    display: block;
+.carousel-image img {
+    max-width: 100%;
+    height: auto;
 }
 
 .carousel-controls {
-    text-align: center;
-    margin-top: 1rem;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 1rem;
 }
 
 .carousel-controls label {
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #007BFF;
-    margin: 0 0.5rem;
 }
 
 /* Servicios */
@@ -109,13 +116,15 @@ header h1 {
 .services ul {
     list-style: none;
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
 }
 
 .services li {
     display: flex;
     align-items: center;
     font-size: 1rem;
-    margin-bottom: 0.5rem;
 }
 
 .services i {
@@ -147,7 +156,7 @@ footer a:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
     .carousel-controls label {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     
     .services i {
