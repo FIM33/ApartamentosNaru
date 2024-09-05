@@ -119,11 +119,10 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 10px;
-    position: relative;
-    bottom: 0;
-    left: 0;
+    position: relative; /* Asegura que el pie esté en su lugar normal */
     width: 100%;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Espacio antes del pie de página */
 }
 
 /* Icono de Instagram en el pie de página */
