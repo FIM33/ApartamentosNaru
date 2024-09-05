@@ -127,11 +127,13 @@ footer {
 /* Icono de Instagram en el pie de página */
 .social-media a {
     color: #fff;
-    font-size: 48px;
+    font-size: 48px; /* Tamaño aumentado del ícono */
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 15px; /* Ajusta el margen según sea necesario */
     display: inline-block;
+    padding: 10px; /* Espacio adicional alrededor del icono */
 }
+
 
 .social-media a:hover {
     color: #e1306c; /* Color de Instagram en hover */
