@@ -17,10 +17,11 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Encabezado */
 header {
     background: #343A40;
     color: #fff;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 2rem;
     text-align: center;
 }
 
@@ -30,11 +31,13 @@ header h1 {
     font-weight: 700;
 }
 
+/* Introducción */
 .intro {
     background: #fff;
-    padding: 2rem 1rem;
+    padding: 2rem 2rem;
     text-align: center;
     border-bottom: 1px solid #ddd;
+    margin: 0 1rem;
 }
 
 .intro h2 {
@@ -52,11 +55,12 @@ header h1 {
 
 /* Apartamentos */
 .apartment {
-    padding: 2rem 1rem;
+    padding: 2rem;
     background: #fff;
     margin: 1rem auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
 }
 
 .apartment h2 {
@@ -105,14 +109,15 @@ header h1 {
     position: absolute;
     bottom: 10px;
     width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .carousel-controls label {
     cursor: pointer;
     font-size: 1.5rem;
     color: #007BFF;
-    margin: 0 0.5rem;
     transition: color 0.3s ease;
 }
 
@@ -152,13 +157,14 @@ header h1 {
     margin-right: 0.5rem;
 }
 
-/* Footer */
+/* Pie de Página */
 footer {
     background: #343A40;
     color: #fff;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 2rem;
     text-align: center;
     border-top: 1px solid #ddd;
+    margin-top: 2rem;
 }
 
 footer p {
@@ -181,17 +187,23 @@ footer .social-media a:hover {
     color: #007BFF;
 }
 
-/* Responsive Design */
+/* Diseño Adaptativo */
 @media (max-width: 768px) {
-    .services ul {
-        grid-template-columns: 1fr; /* Single column layout on small screens */
+    .intro, .apartment {
+        padding: 1.5rem;
+        margin: 0 0.5rem;
     }
-    
+
+    .carousel-controls {
+        gap: 0.5rem;
+    }
+
     .carousel-controls label {
         font-size: 1.25rem;
     }
-    
-    .intro p {
-        font-size: 1rem;
+
+    .services ul {
+        grid-template-columns: 1fr; /* Diseño en una sola columna en pantallas pequeñas */
     }
 }
+
