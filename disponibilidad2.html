@@ -17,25 +17,26 @@
             color: #333;
             margin-top: 20px;
             font-size: 2em;
+            padding: 0 10px; /* Espacio lateral en móviles */
         }
 
         .calendar-container {
             margin: 20px auto;
-            max-width: 800px;
-            height: 600px;
+            max-width: 100%; /* Ajustar al ancho del dispositivo */
+            height: 60vh; /* Altura relativa a la vista del dispositivo */
             border: 1px solid #ccc;
             border-radius: 10px;
             overflow: hidden;
             position: relative;
             background-color: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 10px; /* Espacio interior */
+            padding: 10px;
         }
 
         .calendar-container iframe {
             border: none;
             width: 100%;
-            height: calc(100% - 20px); /* Ajusta la altura para dejar margen */
+            height: 100%; /* Ajustar altura del iframe */
         }
 
         .cta-button {
@@ -50,6 +51,7 @@
             cursor: pointer;
             text-decoration: none;
             transition: background-color 0.3s ease, transform 0.2s ease;
+            margin-bottom: 30px; /* Espacio adicional debajo del botón */
         }
 
         .cta-button:hover {
