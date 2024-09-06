@@ -63,17 +63,32 @@ section {
     display: block;
 }
 
-/* Controles del carrusel */
-.carousel-controls {
-    text-align: center;
-    margin-top: 10px;
+/* Botones del carrusel */
+.carousel-controls span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Ancho del botón */
+    height: 50px; /* Altura del botón */
+    font-size: 28px; /* Tamaño de la fuente */
+    color: #fff; /* Color del ícono */
+    background-color: #007BFF; /* Color de fondo */
+    border-radius: 50%; /* Botones redondeados */
+    cursor: pointer;
+    margin: 0 15px; /* Espaciado entre botones */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra del botón */
 }
 
-.carousel-controls label {
-    cursor: pointer;
-    font-size: 24px;
-    color: #007BFF;
-    margin: 0 10px;
+.carousel-controls span:hover {
+    background-color: #0056b3; /* Color de fondo en hover */
+    transform: scale(1.1); /* Aumento del tamaño en hover */
+}
+
+/* Opcional: Añadir un borde para un efecto adicional */
+.carousel-controls span:focus {
+    outline: none; /* Eliminar el contorno predeterminado del navegador */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Borde de enfoque */
 }
 
 /* Servicios */
