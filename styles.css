@@ -1,47 +1,60 @@
-/* Estilo general del cuerpo */
+/* Estilos generales */
 body {
-    font-family: Arial, sans-serif; /* Fuente general */
-    line-height: 1.6; /* Espacio entre líneas */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Color de fondo claro */
-    padding-bottom: 60px; /* Espacio para el pie de página */
-    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    box-sizing: border-box;
 }
 
-/* Encabezado */
 header {
     background: #333;
     color: #fff;
-    padding: 20px;
+    padding: 10px 0;
     text-align: center;
 }
 
-/* Secciones */
-section {
-    background: #fff;
-    margin: 20px auto;
+h1 {
+    margin: 0;
+}
+
+/* Sección principal */
+.intro {
     padding: 20px;
-    border-radius: 8px; /* Bordes redondeados */
-    max-width: 1200px;
+    background: #f4f4f4;
+}
+
+.intro h2 {
+    margin-top: 0;
+}
+
+/* Apartamento */
+.apartment {
+    padding: 20px;
+}
+
+.apartment h2 {
+    margin-top: 0;
 }
 
 /* Carrusel */
 .carousel {
     position: relative;
-    max-width: 100%;
+    width: 100%;
     overflow: hidden;
 }
 
 .carousel-images {
     display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
 .carousel-image {
-    display: none; /* Ocultar todas las imágenes por defecto */
+    min-width: 100%;
+    box-sizing: border-box;
 }
 
-.carousel-image img {
+.carousel-images img {
     width: 100%;
     height: auto;
     display: block;
@@ -55,100 +68,76 @@ section {
     display: flex;
     justify-content: space-between;
     transform: translateY(-50%);
+    z-index: 10;
 }
 
-.carousel-controls .prev, .carousel-controls .next {
+.carousel-controls button {
     background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-size: 24px;
+    color: #fff;
+    border: none;
     padding: 10px;
     cursor: pointer;
+    font-size: 24px;
+    border-radius: 3px;
+    outline: none;
 }
 
-
-/* Servicios */
-.services {
-    margin-top: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+.carousel-controls button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Lista de servicios */
-.services-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
-    gap: 20px; /* Espacio entre los elementos */
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* Cada ítem de servicio */
-.services-list li {
-    margin-bottom: 10px;
-}
-
-/* Ajustes para pantallas más pequeñas */
-@media (max-width: 768px) {
-    .services-list {
-        grid-template-columns: 1fr; /* Una sola columna en pantallas más pequeñas */
-    }
-}
-
-/* Botón de disponibilidad */
+/* Botones de disponibilidad */
 .availability-button {
-    text-align: center;
     margin-top: 20px;
 }
 
 .availability-button .button {
     display: inline-block;
-    background-color: #007BFF;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    font-size: 16px;
-    font-weight: bold;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    border-radius: 3px;
+    text-align: center;
 }
 
 .availability-button .button:hover {
-    background-color: #0056b3;
+    background: #555;
+}
+
+/* Servicios */
+.services {
+    margin-top: 20px;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services li {
+    margin: 10px 0;
 }
 
 /* Pie de página */
 footer {
-     background: #333;
+    background: #333;
     color: #fff;
+    padding: 10px 0;
     text-align: center;
-    padding: 20px 10px;
-    position: static; /* Pie de página en su lugar normal */
-    width: 100%;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box; /* Asegura que el padding no cause desbordamiento */
-    margin: 0; /* Asegura que no haya márgenes adicionales que causen desbordamiento */
 }
 
-/* Icono de Instagram en el pie de página */
-.social-media a {
+footer .social-media {
+    margin-top: 10px;
+}
+
+footer .social-media a {
     color: #fff;
-    font-size: 48px; /* Tamaño aumentado del ícono */
     text-decoration: none;
-    margin: 0 15px; /* Ajusta el margen según sea necesario */
-    display: inline-block;
-    padding: 10px; /* Espacio adicional alrededor del icono */
+    font-size: 24px;
 }
 
-.social-media a:hover {
-    color: #e1306c; /* Color de Instagram en hover */
+footer .social-media a:hover {
+    color: #ddd;
 }
 
-/* Ajustes para el tamaño de los botones en dispositivos móviles */
-@media (max-width: 600px) {
-    .availability-button .button {
-        padding: 0.5rem 1rem;
-        font-size: 14px;
-    }
-}
