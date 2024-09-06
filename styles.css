@@ -75,8 +75,8 @@ section {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 70px; /* Ancho del botón aumentado */
-    height: 70px; /* Altura del botón aumentada */
+    width: 50px; /* Ancho del botón aumentado */
+    height: 50px; /* Altura del botón aumentada */
     font-size: 36px; /* Tamaño de la fuente aumentado */
     color: #fff; /* Color del ícono */
     background-color: #007BFF; /* Color de fondo azul */
