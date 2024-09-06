@@ -75,15 +75,15 @@ section {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 50px; /* Ancho del botón aumentado */
-    height: 50px; /* Altura del botón aumentada */
+    width: 35px; /* Ancho del botón aumentado */
+    height: 35px; /* Altura del botón aumentada */
     font-size: 36px; /* Tamaño de la fuente aumentado */
     color: #fff; /* Color del ícono */
     background-color: #007BFF; /* Color de fondo azul */
     border-radius: 50%; /* Botones redondeados */
     cursor: pointer;
     margin: 0 20px; /* Espaciado entre botones aumentado */
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra del botón aumentada */
     border: 2px solid #0056b3; /* Borde del botón */
