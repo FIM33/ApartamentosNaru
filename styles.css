@@ -5,7 +5,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4; /* Color de fondo claro */
-    padding-bottom: 60px; /* Espacio para el pie de página */
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos toda la altura de la ventana */
+    display: flex;
+    flex-direction: column; /* Flex para asegurar que el pie de página se mantenga al fondo */
 }
 
 /* Encabezado */
@@ -23,6 +25,7 @@ section {
     padding: 20px;
     border-radius: 8px; /* Bordes redondeados */
     max-width: 1200px;
+    flex-grow: 1; /* Asegura que el contenido principal tome todo el espacio disponible */
 }
 
 /* Carrusel */
@@ -43,7 +46,7 @@ section {
 }
 
 .carousel-image img {
-    width: 100%;
+    max-width: 100%; /* Asegura que las imágenes no se desborden */
     height: auto;
     display: block;
 }
@@ -119,9 +122,10 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 10px;
-    position: static; /* Pie de página en su lugar normal */
     width: 100%;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    position: relative; /* Estático al flujo del contenido */
+    bottom: 0;
 }
 
 /* Icono de Instagram en el pie de página */
@@ -142,5 +146,12 @@ footer {
     .availability-button .button {
         padding: 0.5rem 1rem;
         font-size: 14px;
+    }
+}
+
+/* Asegurar que los carruseles y las imágenes no se desborden en pantallas pequeñas */
+@media (max-width: 768px) {
+    .carousel-image img {
+        width: 100%;
     }
 }
