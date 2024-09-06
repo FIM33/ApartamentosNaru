@@ -1,13 +1,22 @@
-/* Estilo general del cuerpo */
+/* Asegurar que todos los elementos incluyan relleno y borde en el ancho y alto */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Prevenir el desbordamiento horizontal en todo el cuerpo */
 body {
     font-family: Arial, sans-serif; /* Fuente general */
     line-height: 1.6; /* Espacio entre líneas */
     margin: 0;
     padding: 0;
     background-color: #f4f4f4; /* Color de fondo claro */
+    padding-bottom: 60px; /* Espacio para el pie de página */
     min-height: 100vh; /* Asegura que el cuerpo ocupe al menos toda la altura de la ventana */
     display: flex;
     flex-direction: column; /* Flex para asegurar que el pie de página se mantenga al fondo */
+    overflow-x: hidden; /* Prevenir desbordamiento horizontal */
 }
 
 /* Encabezado */
@@ -16,6 +25,7 @@ header {
     color: #fff;
     padding: 20px;
     text-align: center;
+    width: 100%;
 }
 
 /* Secciones */
@@ -25,6 +35,7 @@ section {
     padding: 20px;
     border-radius: 8px; /* Bordes redondeados */
     max-width: 1200px;
+    width: 100%;
     flex-grow: 1; /* Asegura que el contenido principal tome todo el espacio disponible */
 }
 
@@ -38,6 +49,7 @@ section {
 .carousel-images {
     display: flex;
     transition: transform 0.5s ease; /* Transición suave para el cambio de imagen */
+    width: 100%; /* Asegura que las imágenes se ajusten al ancho del contenedor */
 }
 
 .carousel-image {
@@ -46,7 +58,7 @@ section {
 }
 
 .carousel-image img {
-    max-width: 100%; /* Asegura que las imágenes no se desborden */
+    width: 100%;
     height: auto;
     display: block;
 }
@@ -91,6 +103,12 @@ section {
 @media (max-width: 768px) {
     .services-list {
         grid-template-columns: 1fr; /* Una sola columna en pantallas más pequeñas */
+    }
+
+    /* Ajustar imágenes del carrusel */
+    .carousel-image img {
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -153,5 +171,12 @@ footer {
 @media (max-width: 768px) {
     .carousel-image img {
         width: 100%;
+    }
+}
+
+/* Prevenir desbordamiento de cualquier elemento en pantallas pequeñas */
+@media (max-width: 768px) {
+    section {
+        margin: 0 auto; /* Asegura que las secciones no se desborden horizontalmente */
     }
 }
