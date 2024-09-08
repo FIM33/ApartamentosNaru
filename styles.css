@@ -47,23 +47,24 @@ header {
     margin: 0; /* Elimina el margen para centrar el ícono */
 }
 
-/* Estilos para el menú de navegación con efecto de cascada */
+/* Estilos para el menú de navegación */
 .nav-menu {
     display: none; /* Oculta el menú por defecto */
     background: #007BFF;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    top: calc(100%);
-    right: 10px;
-    width: 200px;
-    z-index: 999;
+    position: absolute; /* Posiciona el menú de navegación dentro del header */
+    top: calc(100%); /* Ajusta la distancia desde el borde inferior del botón de menú */
+    right: 10px; /* Alinea el menú a la derecha del header */
+    width: 200px; /* Ajusta el ancho del menú según sea necesario */
+    z-index: 999; /* Asegura que el menú esté por encima de otros elementos */
     padding: 0;
     overflow: hidden; /* Asegura que los elementos desbordantes se oculten */
+    max-height: 0; /* Inicia el menú con altura cero */
     transition: max-height 0.5s ease; /* Transición suave para max-height */
 }
 
-/* Asegura que el menú se expanda para mostrar los elementos */
+/* Mostrar el menú cuando se activa */
 .nav-menu.show {
     display: block;
     max-height: 500px; /* Ajusta el valor según el contenido del menú */
@@ -83,11 +84,29 @@ header {
     transition: opacity 0.5s ease, transform 0.5s ease; /* Transición para la opacidad y el desplazamiento */
 }
 
-.nav-menu.show ul li {
-    animation: cascade 0.5s forwards; /* Aplica la animación de cascada */
+/* Animación de cascada */
+.nav-menu.show ul li:nth-child(1) {
+    animation: cascade 0.5s forwards;
 }
 
-/* Animación de cascada */
+.nav-menu.show ul li:nth-child(2) {
+    animation: cascade 0.5s forwards;
+    animation-delay: 0.1s; /* Ajusta el retraso para el segundo ítem */
+}
+
+.nav-menu.show ul li:nth-child(3) {
+    animation: cascade 0.5s forwards;
+    animation-delay: 0.2s; /* Ajusta el retraso para el tercer ítem */
+}
+
+/* Más ítems si es necesario */
+.nav-menu.show ul li:nth-child(4) {
+    animation: cascade 0.5s forwards;
+    animation-delay: 0.3s; /* Ajusta el retraso para el cuarto ítem */
+}
+
+/* Añade más si hay más ítems */
+
 @keyframes cascade {
     0% {
         opacity: 0;
@@ -111,7 +130,6 @@ header {
 .nav-menu ul li a:hover {
     background: #0056b3; /* Color de fondo en hover */
 }
-
 
 /* Secciones */
 section {
