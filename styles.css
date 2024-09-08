@@ -131,7 +131,8 @@ header {
     .nav-menu {
         width: 40%; /* Ocupará el 40% del ancho de la pantalla en móviles */
         max-width: 300px; /* Define un ancho máximo más pequeño para el menú */
-        right: 5%; /* Ajusta la posición del menú para centrarlo horizontalmente */
+        right: 5%;/* Ajusta la posición del menú para centrarlo horizontalmente */
+        top: 0;
     }
 }
 
