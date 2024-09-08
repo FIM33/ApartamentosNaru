@@ -72,12 +72,13 @@ section {
 
 /* Estilos para los botones del carrusel */
 carousel-controls span {
+.carousel-controls span {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 40px; /* Ancho del botón */
     height: 40px; /* Altura del botón */
-    font-size: 18px; /* Tamaño de la fuente */
+    font-size: 24px; /* Tamaño de la fuente para el ícono */
     color: #fff; /* Color del ícono blanco */
     background-color: #007BFF; /* Color de fondo azul */
     border-radius: 50%; /* Botones redondeados */
@@ -98,6 +99,14 @@ carousel-controls span {
     outline: none; /* Eliminar el contorno predeterminado del navegador */
 }
 
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .carousel-controls span {
+        width: 35px; /* Ancho del botón en pantallas más pequeñas */
+        height: 35px; /* Altura del botón en pantallas más pequeñas */
+        font-size: 20px; /* Tamaño de la fuente en pantallas más pequeñas */
+    }
+}
 
 /* Servicios */
 .services {
