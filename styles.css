@@ -109,7 +109,6 @@ section {
     border-radius: 8px;
     background-color: #fff; /* Fondo blanco para el área de servicios */
 }
-
 /* Lista de servicios */
 .services ul {
     list-style: none; /* Eliminar viñetas por defecto */
@@ -127,9 +126,10 @@ section {
 .services-list li {
     margin-bottom: 10px;
     display: flex;
-    align-items: center; /* Alinea el ícono y el texto verticalmente */
+    align-items: flex-start; /* Alinea el ícono y el texto en la parte superior */
     color: #000; /* Color del texto negro */
     font-size: 16px; /* Tamaño de fuente para el texto */
+    line-height: 1.5; /* Espacio entre líneas para mejorar la legibilidad */
 }
 
 /* Icono azul antes del texto de cada servicio */
@@ -137,6 +137,7 @@ section {
     color: #007BFF; /* Color azul para los íconos */
     margin-right: 15px; /* Espacio entre el ícono y el texto */
     font-size: 1.5em; /* Tamaño del ícono */
+    line-height: 1; /* Alineación vertical del ícono */
 }
 
 /* Ajustes para pantallas más pequeñas */
@@ -146,14 +147,23 @@ section {
     }
 }
 
-/* Botón de disponibilidad */
-.availability-button {
-    display: flex; /* Usa flexbox para centrar el contenido */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    margin-top: 20px;
-    width: 100%; /* Asegura que el contenedor ocupe el ancho completo del contenedor padre */
+    /* Ajustar imágenes del carrusel */
+    .carousel-image img {
+        width: 100%;
+        height: auto;
+    }
 }
 
+/* Botón de disponibilidad */
+.availability-button {
+    text-align: center; /* Asegura que el contenido interno esté centrado */
+    margin-top: 20px;
+    width: 100%; /* Asegura que el contenedor ocupe el ancho completo del contenedor padre */
+    display: flex; /* Usa flexbox para el centrado */
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
+
+/* Botón de disponibilidad dentro del contenedor */
 .availability-button .button {
     background-color: #007BFF;
     color: white;
@@ -163,6 +173,7 @@ section {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    /* Asegúrate de que no haya márgenes adicionales que puedan afectar la alineación */
     margin: 0; /* Elimina márgenes adicionales si los hubiera */
 }
 
@@ -215,5 +226,4 @@ footer {
     section {
         margin: 0 auto; /* Asegura que las secciones no se desborden horizontalmente */
     }
-}
-
+} 
