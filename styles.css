@@ -47,20 +47,29 @@ header {
     margin: 0; /* Elimina el margen para centrar el ícono */
 }
 
-/* Estilos para el menú de navegación */
+/* Estilos para el menú de navegación con efecto de cascada */
 .nav-menu {
     display: none; /* Oculta el menú por defecto */
     background: #007BFF;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: absolute; /* Posiciona el menú de navegación dentro del header */
-    top: calc(100%); /* Ajusta la distancia desde el borde inferior del botón de menú */
-    right: 10px; /* Alinea el menú a la derecha del header */
-    width: 200px; /* Ajusta el ancho del menú según sea necesario */
-    z-index: 999; /* Asegura que el menú esté por encima de otros elementos */
+    position: absolute;
+    top: calc(100%);
+    right: 10px;
+    width: 200px;
+    z-index: 999;
     padding: 0;
+    overflow: hidden; /* Asegura que los elementos desbordantes se oculten */
+    transition: max-height 0.5s ease; /* Transición suave para max-height */
 }
-/* Asegura que el menú de navegación esté debajo del icono de menú */
+
+/* Asegura que el menú se expanda para mostrar los elementos */
+.nav-menu.show {
+    display: block;
+    max-height: 500px; /* Ajusta el valor según el contenido del menú */
+}
+
+/* Transición para los elementos del menú */
 .nav-menu ul {
     list-style: none;
     padding: 0;
@@ -69,6 +78,25 @@ header {
 
 .nav-menu ul li {
     border-bottom: 1px solid #fff;
+    opacity: 0;
+    transform: translateY(-20px); /* Mueve el elemento hacia arriba al inicio */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transición para la opacidad y el desplazamiento */
+}
+
+.nav-menu.show ul li {
+    animation: cascade 0.5s forwards; /* Aplica la animación de cascada */
+}
+
+/* Animación de cascada */
+@keyframes cascade {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .nav-menu ul li a {
@@ -82,51 +110,6 @@ header {
 
 .nav-menu ul li a:hover {
     background: #0056b3; /* Color de fondo en hover */
-}
-
-/* Mostrar el menú cuando se activa */
-.nav-menu.active {
-    display: block;
-}
-
-/* Estilos para pantallas grandes */
-@media (min-width: 768px) {
-    .menu-toggle {
-        display: none; /* Oculta el botón en pantallas grandes */
-    }
-
-    .nav-menu {
-        display: block; /* Muestra el menú en pantallas grandes */
-        position: static; /* Resetea el posicionamiento para pantallas grandes */
-        background: none;
-        box-shadow: none;
-        width: auto;
-        border-radius: 10px;
-        margin: 0;
-        padding: 0;
-    }
-
-    .nav-menu ul {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        margin: 0;
-    }
-
-    .nav-menu ul li {
-        border: none;
-    }
-
-    .nav-menu ul li a {
-        padding: 10px 20px;
-        font-size: 1em;
-        color: white;
-        border-radius: 10px;
-    }
-
-    .nav-menu ul li a:hover {
-        background: #0056b3; /* Color de fondo en hover */
-    }
 }
 
 
