@@ -47,13 +47,14 @@ header {
 }
 
 /* Estilos para el menú de navegación */
+/* Menú de navegación */
 .nav-menu {
     display: none; /* Oculta el menú por defecto */
     background: #007BFF;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: absolute; /* Posiciona el menú de navegación dentro del header */
-    top: calc(100%); /* Ajusta la distancia desde el borde inferior del botón de menú */
+    position: absolute; /* Posiciona el menú dentro del header */
+    top: calc(100%); /* Ajusta la distancia desde el borde inferior del botón */
     right: 10px; /* Alinea el menú a la derecha del header */
     width: 200px; /* Ajusta el ancho del menú según sea necesario */
     z-index: 999; /* Asegura que el menú esté por encima de otros elementos */
@@ -121,6 +122,36 @@ header {
 
 .nav-menu ul li a:hover {
     background: #0056b3; /* Color de fondo en hover */
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .nav-menu {
+        width: 100%; /* Menú ocupa el ancho completo en pantallas pequeñas */
+        right: 0; /* Alinea el menú a la izquierda en pantallas pequeñas */
+    }
+    
+    .nav-menu ul li a {
+        font-size: 1em; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+    }
+
+    /* Asegúrate de que el botón del menú sea lo suficientemente grande en pantallas pequeñas */
+    .menu-toggle {
+        font-size: 1.2em; /* Ajusta el tamaño del ícono del menú */
+        bottom: 15px; /* Aumenta el espacio desde el borde inferior */
+        right: 15px; /* Aumenta el espacio desde el borde derecho */
+    }
+}
+
+/* Ajustes para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .nav-menu ul li a {
+        font-size: 0.9em; /* Reduce el tamaño de fuente para pantallas muy pequeñas */
+    }
+
+    .menu-toggle {
+        font-size: 1.5em; /* Ajusta el tamaño del ícono del menú */
+    }
 }
 
 /* Secciones */
