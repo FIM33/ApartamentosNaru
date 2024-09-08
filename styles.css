@@ -45,22 +45,20 @@ header {
 .menu-toggle i {
     margin: 0; /* Elimina el margen para centrar el ícono */
 }
-
 /* Cambia el color del ícono cuando el menú está activo */
 .menu-toggle i.active {
     color: #007BFF; /* Color azul para el ícono cuando el menú está desplegado */
 }
-
 /* Estilos para el menú de navegación */
 .nav-menu {
     display: none; /* Oculta el menú por defecto */
     background: #007BFF;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: absolute; /* Cambia a absolute para que el menú se posicione en relación con el botón de menú */
-    top: 100%; /* Posiciona el menú justo debajo del botón */
-    right: 0; /* Alinea el menú con el borde derecho del contenedor */
-    width: 90%; /* Ocupará el 90% del ancho del contenedor en móviles */
+    position: fixed; /* Cambia a fixed para que el menú se mantenga en la misma posición en la pantalla */
+    top: 0; /* Alinea el menú al borde superior de la pantalla */
+    right: 0; /* Alinea el menú al borde derecho de la pantalla */
+    width: 90%; /* Ocupará el 90% del ancho de la pantalla en móviles */
     max-width: 300px; /* Define un ancho máximo más pequeño para el menú */
     height: auto; /* Ajusta la altura al contenido */
     max-height: 0; /* Inicia el menú con altura cero */
@@ -131,9 +129,10 @@ header {
 /* Ajustes para pantallas más pequeñas */
 @media (max-width: 768px) {
     .nav-menu {
-        width: 90%; /* Ocupa el 90% del ancho del contenedor en móviles */
+        width: 40%; /* Ocupará el 40% del ancho de la pantalla en móviles */
         max-width: 300px; /* Define un ancho máximo más pequeño para el menú */
-        right: 0; /* Alinea el menú con el borde derecho del contenedor */
+        right: 5%;/* Ajusta la posición del menú para centrarlo horizontalmente */
+        top: 100%;
     }
 }
 
@@ -142,7 +141,7 @@ header {
         font-size: 1em; /* Tamaño de fuente reducido en pantallas muy pequeñas */
         padding: 10px; /* Ajusta el relleno en pantallas muy pequeñas */
     }
-}
+} 
 
 /* Servicios */
 .services {
