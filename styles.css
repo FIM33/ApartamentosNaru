@@ -175,8 +175,8 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px; /* Ancho del botón */
-    height: 50px; /* Altura del botón */
+    width: 70px; /* Ancho del botón */
+    height: 70px; /* Altura del botón */
     font-size: 24px; /* Tamaño de la fuente para el ícono */
     color: #007BFF; /* Color azul para el ícono */
     background-color: transparent; /* Sin fondo */
@@ -202,8 +202,8 @@ section {
 /* Ajustes para pantallas más pequeñas */
 @media (max-width: 768px) {
     .carousel-controls span {
-        width: 50px; /* Ancho del botón en pantallas más pequeñas */
-        height: 50px; /* Altura del botón en pantallas más pequeñas */
+        width: 70px; /* Ancho del botón en pantallas más pequeñas */
+        height: 70px; /* Altura del botón en pantallas más pequeñas */
         font-size: 20px; /* Tamaño de la fuente en pantallas más pequeñas */
     }
 }
