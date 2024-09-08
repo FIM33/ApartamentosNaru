@@ -67,7 +67,7 @@ header {
 /* Mostrar el menú cuando se activa */
 .nav-menu.show {
     display: block;
-    max-height: 500px; /* Ajusta el valor según el contenido del menú */
+    max-height: 300px; /* Ajusta el valor según el tamaño total del menú */
 }
 
 /* Transición para los elementos del menú */
@@ -91,22 +91,17 @@ header {
 
 .nav-menu.show ul li:nth-child(2) {
     animation: cascade 0.5s forwards;
-    animation-delay: 0.1s; /* Ajusta el retraso para el segundo ítem */
+    animation-delay: 0.1s; /* Retraso para el segundo ítem */
 }
 
 .nav-menu.show ul li:nth-child(3) {
     animation: cascade 0.5s forwards;
-    animation-delay: 0.2s; /* Ajusta el retraso para el tercer ítem */
+    animation-delay: 0.2s; /* Retraso para el tercer ítem */
 }
 
 /* Más ítems si es necesario */
-.nav-menu.show ul li:nth-child(4) {
-    animation: cascade 0.5s forwards;
-    animation-delay: 0.3s; /* Ajusta el retraso para el cuarto ítem */
-}
 
-/* Añade más si hay más ítems */
-
+/* Animación */
 @keyframes cascade {
     0% {
         opacity: 0;
