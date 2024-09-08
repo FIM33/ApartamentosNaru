@@ -131,8 +131,6 @@ section {
     font-size: 16px; /* Tamaño de fuente para el texto */
     line-height: 1.5; /* Espacio entre líneas para mejorar la legibilidad */
 }
-}
-
 /* Ajustes para pantallas más pequeñas */
 @media (max-width: 768px) {
     .services-list {
@@ -145,18 +143,49 @@ section {
         width: 100%;
         height: auto;
     }
-}
+
 /* boton/
+/* Asegurar que todos los elementos incluyan relleno y borde en el ancho y alto */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo general del botón de disponibilidad */
+.availability-button {
+    display: flex; /* Usa Flexbox para alinear los elementos dentro del contenedor */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    width: 100%; /* Asegura que el contenedor ocupe el ancho completo del contenedor padre */
+    margin-top: 20px; /* Espacio arriba del botón */
+}
+
+/* Estilo del botón */
+.availability-button .button {
+    background-color: #007BFF; /* Color de fondo azul */
+    color: white; /* Color del texto blanco */
+    padding: 0.75rem 1.5rem; /* Relleno del botón */
+    font-size: 16px; /* Tamaño de la fuente */
+    font-weight: 600; /* Grosor de la fuente para un texto más destacado */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    border-radius: 5px; /* Bordes redondeados del botón */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave para cambios de color y tamaño */
+    font-family: 'Arial', sans-serif; /* Tipografía del botón */
+}
+
+/* Efecto hover para el botón */
+.availability-button .button:hover {
+    background-color: #0056b3; /* Color de fondo más oscuro en hover */
+    transform: scale(1.05); /* Ligero aumento del tamaño en hover */
+}
 
 /* Ajustes para pantallas más pequeñas */
 @media (max-width: 600px) {
     .availability-button .button {
-        padding: 0.5rem 1rem;
-        font-size: 14px;
+        padding: 0.5rem 1rem; /* Relleno ajustado para pantallas pequeñas */
+        font-size: 14px; /* Tamaño de fuente reducido para pantallas pequeñas */
     }
 }
-
-
 /* Pie de página */
 footer {
     background: #333;
