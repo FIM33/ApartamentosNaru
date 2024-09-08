@@ -62,7 +62,7 @@ section {
     height: auto;
     display: block;
 }
-/* Controles del carrusel */
+
 /* Controles del carrusel */
 .carousel-controls {
     display: flex; /* Usa Flexbox para alinear los controles */
@@ -122,6 +122,12 @@ section {
 /* Cada ítem de servicio */
 .services-list li {
     margin-bottom: 10px;
+}
+/* Icono azul antes del texto de cada servicio */
+.services ul li i {
+    color: #007BFF; /* Color azul para los íconos */
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+    font-size: 1.5em; /* Tamaño del ícono */
 }
 
 /* Ajustes para pantallas más pequeñas */
