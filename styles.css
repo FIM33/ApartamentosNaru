@@ -144,14 +144,6 @@ section {
         height: auto;
     }
 
-/* boton/
-/* Asegurar que todos los elementos incluyan relleno y borde en el ancho y alto */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 /* Estilo general del botón de disponibilidad */
 .availability-button {
     display: flex; /* Usa Flexbox para alinear los elementos dentro del contenedor */
