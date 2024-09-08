@@ -107,15 +107,20 @@ section {
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
+    background-color: #fff; /* Fondo blanco para el área de servicios */
 }
+
 /* Lista de servicios */
-.services-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
-    gap: 20px; /* Espacio entre los elementos */
-    list-style: none;
+.services ul {
+    list-style: none; /* Eliminar viñetas por defecto */
     padding: 0;
     margin: 0;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas grandes */
+    gap: 20px; /* Espacio entre los elementos */
 }
 
 /* Cada ítem de servicio */
@@ -124,13 +129,14 @@ section {
     display: flex;
     align-items: center; /* Alinea el ícono y el texto verticalmente */
     color: #000; /* Color del texto negro */
+    font-size: 16px; /* Tamaño de fuente para el texto */
 }
 
 /* Icono azul antes del texto de cada servicio */
 .services-list li i {
     color: #007BFF; /* Color azul para los íconos */
     margin-right: 10px; /* Espacio entre el ícono y el texto */
-    font-size: 1.5em; /* Tamaño del ícono, ajustable si es necesario */
+    font-size: 1.5em; /* Tamaño del ícono */
     line-height: 1; /* Alineación vertical del ícono */
 }
 
@@ -140,7 +146,6 @@ section {
         grid-template-columns: 1fr; /* Una sola columna en pantallas más pequeñas */
     }
 }
-
 
     /* Ajustar imágenes del carrusel */
     .carousel-image img {
