@@ -178,7 +178,7 @@ section {
     justify-content: center;
     width: 70px; /* Ancho del botón */
     height: 70px; /* Altura del botón */
-    font-size: 24px; /* Tamaño de la fuente para el ícono */
+    font-size: 50px; /* Tamaño de la fuente para el ícono */
     color: #007BFF; /* Color azul para el ícono */
     background-color: transparent; /* Sin fondo */
     border-radius: 50%; /* Botones redondeados */
