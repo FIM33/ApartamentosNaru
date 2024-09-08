@@ -75,31 +75,29 @@ section {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 30px; /* Ancho del botón aumentado */
-    height: 30px; /* Altura del botón aumentada */
-    font-size: 36px; /* Tamaño de la fuente aumentado */
-    color: #fff; /* Color del ícono */
+    width: 40px; /* Ancho del botón */
+    height: 40px; /* Altura del botón */
+    font-size: 24px; /* Tamaño de la fuente más pequeño */
+    color: #fff; /* Color del ícono blanco */
     background-color: #007BFF; /* Color de fondo azul */
     border-radius: 50%; /* Botones redondeados */
     cursor: pointer;
-    margin: 0 20px; /* Espaciado entre botones aumentado */
-    margin-bottom: 10px;
+    margin: 0 10px; /* Espaciado entre botones reducido */
     transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra del botón aumentada */
-    border: 2px solid #0056b3; /* Borde del botón */
+    border: none; /* Elimina el borde del botón */
 }
 
 /* Efecto hover para los botones */
 .carousel-controls span:hover {
     background-color: #0056b3; /* Color de fondo más oscuro en hover */
-    transform: scale(1.1); /* Aumento del tamaño en hover */
+    transform: scale(1.05); /* Ligero aumento del tamaño en hover */
 }
 
 /* Efecto de enfoque para los botones */
 .carousel-controls span:focus {
     outline: none; /* Eliminar el contorno predeterminado del navegador */
-    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5); /* Borde de enfoque aumentado */
 }
+
 
 /* Servicios */
 .services {
