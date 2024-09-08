@@ -20,7 +20,6 @@ body {
 }
 
 /* Encabezado */
-/* Estilos para el header */
 /* Estilos generales para el body y el header */
 body {
     font-family: Arial, sans-serif;
@@ -39,20 +38,20 @@ header {
 
 /* Estilos para el botón de menú */
 .menu-toggle {
-    background: #007BFF;
+    background: none;
     border: none;
     color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
     font-size: 1.5em;
-    position: relative;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px; /* Posiciona el botón en la parte inferior */
+    right: 10px; /* Posiciona el botón en la parte derecha */
     z-index: 1000;
 }
 
 /* Icono en el botón de menú */
 .menu-toggle i {
-    margin-right: 10px;
+    margin: 0; /* Elimina el margen para centrar el ícono */
 }
 
 /* Estilos para el menú de navegación */
@@ -63,8 +62,9 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: absolute;
     top: 70px; /* Ajusta según el tamaño del botón de menú */
-    right: 20px;
+    right: 10px;
     width: 200px; /* Ajusta según el tamaño del menú deseado */
+    z-index: 999; /* Asegura que el menú esté por encima de otros elementos */
 }
 
 .nav-menu ul {
@@ -132,6 +132,7 @@ header {
         background: #0056b3; /* Color de fondo en hover */
     }
 }
+
 
 
 /* Secciones */
