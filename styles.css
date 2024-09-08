@@ -20,12 +20,71 @@ body {
 }
 
 /* Encabezado */
+/* Estilos generales para el encabezado y el menú */
 header {
-    background: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
+    background-color: #333; /* Color de fondo del encabezado */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    display: flex; /* Utiliza Flexbox para alinear los elementos */
+    justify-content: space-between; /* Espacio entre el logotipo y el menú */
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+/* Estilos para el menú de navegación */
+nav {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none; /* Elimina las viñetas */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Muestra los elementos de la lista en línea */
+}
+
+nav ul li {
+    margin: 0 15px; /* Espaciado entre los elementos del menú */
+}
+
+nav ul li a {
+    color: white; /* Color del texto del enlace */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 1em;
+    padding: 8px 15px; /* Espaciado interno del enlace */
+    border-radius: 4px; /* Bordes redondeados para los enlaces */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #555; /* Color de fondo al pasar el ratón */
+    color: #fff; /* Color del texto al pasar el ratón */
+}
+
+nav ul li a.active {
+    background-color: #007BFF; /* Color de fondo para el enlace activo */
+    color: white; /* Color del texto para el enlace activo */
+}
+
+/* Estilos para el menú en pantallas pequeñas */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Cambia la dirección del flex a columna en pantallas pequeñas */
+        text-align: center; /* Centra el texto y el menú */
+    }
+
+    nav ul {
+        flex-direction: column; /* Muestra los elementos del menú en columna */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Espaciado vertical entre los elementos del menú */
+    }
 }
 
 /* Secciones */
