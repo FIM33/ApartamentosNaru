@@ -121,6 +121,7 @@ header {
         padding: 10px 20px;
         font-size: 1em;
         color: white;
+        border-radius: 10px;
     }
 
     .nav-menu ul li a:hover {
