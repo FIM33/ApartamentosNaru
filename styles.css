@@ -127,7 +127,7 @@ section {
 .services-list li {
     margin-bottom: 10px;
     display: flex;
-    align-items: center; /* Alinea el ícono y el texto verticalmente */
+    align-items: flex-start; /* Alinea el ícono y el texto en la parte superior */
     color: #000; /* Color del texto negro */
     font-size: 16px; /* Tamaño de fuente para el texto */
 }
@@ -135,9 +135,9 @@ section {
 /* Icono azul antes del texto de cada servicio */
 .services-list li i {
     color: #007BFF; /* Color azul para los íconos */
-    margin-right: 10px; /* Espacio entre el ícono y el texto */
+    margin-right: 15px; /* Espacio entre el ícono y el texto */
     font-size: 1.5em; /* Tamaño del ícono */
-    line-height: 1; /* Alineación vertical del ícono */
+    line-height: 1.4; /* Ajusta la alineación vertical del ícono */
 }
 
 /* Ajustes para pantallas más pequeñas */
@@ -145,6 +145,8 @@ section {
     .services-list {
         grid-template-columns: 1fr; /* Una sola columna en pantallas más pequeñas */
     }
+}
+
 }
 
     /* Ajustar imágenes del carrusel */
