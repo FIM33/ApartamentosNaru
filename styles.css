@@ -71,7 +71,6 @@ section {
 }
 
 /* Estilos para los botones del carrusel */
-carousel-controls span {
 .carousel-controls span {
     display: flex;
     align-items: center;
@@ -79,19 +78,20 @@ carousel-controls span {
     width: 40px; /* Ancho del botón */
     height: 40px; /* Altura del botón */
     font-size: 24px; /* Tamaño de la fuente para el ícono */
-    color: #fff; /* Color del ícono blanco */
-    background-color: #007BFF; /* Color de fondo azul */
+    color: #007BFF; /* Color azul para el ícono */
+    background-color: transparent; /* Sin fondo */
     border-radius: 50%; /* Botones redondeados */
     cursor: pointer;
     margin: 0 10px; /* Espaciado entre botones */
-    transition: background-color 0.3s ease; /* Transición suave */
+    transition: color 0.3s ease, transform 0.2s ease; /* Transición suave */
     border: none; /* Elimina el borde del botón */
     text-align: center; /* Centra el texto dentro del botón */
 }
 
 /* Efecto hover para los botones */
 .carousel-controls span:hover {
-    background-color: #0056b3; /* Color de fondo más oscuro en hover */
+    color: #0056b3; /* Color de ícono más oscuro en hover */
+    transform: scale(1.1); /* Aumento del tamaño en hover */
 }
 
 /* Efecto de enfoque para los botones */
@@ -105,6 +105,14 @@ carousel-controls span {
         width: 35px; /* Ancho del botón en pantallas más pequeñas */
         height: 35px; /* Altura del botón en pantallas más pequeñas */
         font-size: 20px; /* Tamaño de la fuente en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-controls span {
+        width: 30px; /* Ancho del botón en pantallas muy pequeñas */
+        height: 30px; /* Altura del botón en pantallas muy pequeñas */
+        font-size: 18px; /* Tamaño de la fuente en pantallas muy pequeñas */
     }
 }
 
