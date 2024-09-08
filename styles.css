@@ -49,9 +49,6 @@ header {
 .menu-toggle i.active {
     color: #007BFF; /* Color azul para el ícono cuando el menú está desplegado */
 }
-
-
-/* Estilos para el menú de navegación */
 /* Estilos para el menú de navegación */
 .nav-menu {
     display: none; /* Oculta el menú por defecto */
@@ -62,7 +59,7 @@ header {
     top: 0; /* Alinea el menú al borde superior de la pantalla */
     right: 0; /* Alinea el menú al borde derecho de la pantalla */
     width: 100%; /* Ocupará el ancho completo de la pantalla en móviles */
-    max-width: 150px; /* Define un ancho máximo más pequeño para el menú */
+    max-width: 250px; /* Define un ancho máximo más pequeño para el menú */
     height: auto; /* Ajusta la altura al contenido */
     max-height: 0; /* Inicia el menú con altura cero */
     overflow: hidden; /* Asegura que los elementos desbordantes se oculten */
@@ -133,7 +130,7 @@ header {
 @media (max-width: 768px) {
     .nav-menu {
         width: 100%; /* Ocupará el ancho completo de la pantalla en móviles */
-        max-width: 250px; /* Define un ancho máximo para el menú */
+        max-width: 50px; /* Define un ancho máximo para el menú */
     }
 }
 
