@@ -181,6 +181,15 @@ section {
     background-color: #0056b3;
 }
 
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 600px) {
+    .availability-button .button {
+        padding: 0.5rem 1rem;
+        font-size: 14px;
+    }
+}
+
+
 /* Pie de página */
 footer {
     background: #333;
