@@ -158,10 +158,12 @@ section {
     text-align: center; /* Asegura que el contenido interno esté centrado */
     margin-top: 20px;
     width: 100%; /* Asegura que el contenedor ocupe el ancho completo del contenedor padre */
+    display: flex; /* Usa flexbox para el centrado */
+    justify-content: center; /* Centra el contenido horizontalmente */
 }
 
+/* Botón de disponibilidad dentro del contenedor */
 .availability-button .button {
-    display: inline-block; /* Permite que el botón se centre dentro del contenedor */
     background-color: #007BFF;
     color: white;
     padding: 0.75rem 1.5rem;
@@ -172,7 +174,6 @@ section {
     transition: background-color 0.3s ease;
     /* Asegúrate de que no haya márgenes adicionales que puedan afectar la alineación */
     margin: 0; /* Elimina márgenes adicionales si los hubiera */
-    /* Opcional: Ajusta el tamaño del contenedor si es necesario */
 }
 
 .availability-button .button:hover {
