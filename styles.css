@@ -62,7 +62,7 @@ section {
     height: auto;
     display: block;
 }
-
+/* Controles del carrusel */
 /* Controles del carrusel */
 .carousel-controls {
     display: flex; /* Usa Flexbox para alinear los controles */
@@ -75,17 +75,17 @@ section {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 35px; /* Ancho del botón */
-    height: 35px; /* Altura del botón */
-    font-size: 36px; /* Tamaño de la fuente */
+    width: 35px; /* Ancho del botón aumentado */
+    height: 35px; /* Altura del botón aumentada */
+    font-size: 36px; /* Tamaño de la fuente aumentado */
     color: #fff; /* Color del ícono */
     background-color: #007BFF; /* Color de fondo azul */
     border-radius: 50%; /* Botones redondeados */
     cursor: pointer;
-    margin: 0 20px; /* Espaciado entre botones */
+    margin: 0 20px; /* Espaciado entre botones aumentado */
     margin-bottom: 20px;
     transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra del botón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra del botón aumentada */
     border: 2px solid #0056b3; /* Borde del botón */
 }
 
@@ -98,7 +98,7 @@ section {
 /* Efecto de enfoque para los botones */
 .carousel-controls span:focus {
     outline: none; /* Eliminar el contorno predeterminado del navegador */
-    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5); /* Borde de enfoque */
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5); /* Borde de enfoque aumentado */
 }
 
 /* Servicios */
@@ -122,16 +122,6 @@ section {
 /* Cada ítem de servicio */
 .services-list li {
     margin-bottom: 10px;
-}
-
-/* Iconos de la lista de servicios en azul */
-.services-list li::before {
-    content: '\2713'; /* Puedes cambiarlo por un icono si usas Font Awesome, por ejemplo */
-    font-size: 1.5em;
-    color: #007BFF; /* Azul para el icono */
-    margin-right: 10px;
-    display: inline-block;
-    vertical-align: middle;
 }
 
 /* Ajustes para pantallas más pequeñas */
@@ -214,5 +204,4 @@ footer {
     section {
         margin: 0 auto; /* Asegura que las secciones no se desborden horizontalmente */
     }
-}
-
+} 
