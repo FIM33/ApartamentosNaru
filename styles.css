@@ -99,8 +99,6 @@ header {
     animation-delay: 0.2s; /* Retraso para el tercer ítem */
 }
 
-/* Más ítems si es necesario */
-
 /* Animación */
 @keyframes cascade {
     0% {
