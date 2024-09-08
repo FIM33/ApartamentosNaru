@@ -54,7 +54,7 @@ header {
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: absolute; /* Posiciona el menú de navegación dentro del header */
-    top: calc(100% + 5px); /* Ajusta la distancia desde el borde inferior del botón de menú */
+    top: calc(100%); /* Ajusta la distancia desde el borde inferior del botón de menú */
     right: 10px; /* Alinea el menú a la derecha del header */
     width: 200px; /* Ajusta el ancho del menú según sea necesario */
     z-index: 999; /* Asegura que el menú esté por encima de otros elementos */
