@@ -60,6 +60,7 @@ header {
     z-index: 999; /* Asegura que el menú esté por encima de otros elementos */
     padding: 0;
 }
+/* Asegura que el menú de navegación esté debajo del icono de menú */
 .nav-menu ul {
     list-style: none;
     padding: 0;
@@ -96,7 +97,7 @@ header {
 
     .nav-menu {
         display: block; /* Muestra el menú en pantallas grandes */
-        position: static;
+        position: static; /* Resetea el posicionamiento para pantallas grandes */
         background: none;
         box-shadow: none;
         width: auto;
