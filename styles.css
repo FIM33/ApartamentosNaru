@@ -108,7 +108,6 @@ section {
     border: 1px solid #ddd;
     border-radius: 8px;
 }
-
 /* Lista de servicios */
 .services-list {
     display: grid;
@@ -118,10 +117,12 @@ section {
     padding: 0;
     margin: 0;
 }
-
 /* Cada ítem de servicio */
-.services-list li {
+.services ul li {
     margin-bottom: 10px;
+    display: flex;
+    align-items: center; /* Alinea el icono y el texto verticalmente */
+    color: #000; /* Color del texto negro */
 }
 /* Icono azul antes del texto de cada servicio */
 .services ul li i {
