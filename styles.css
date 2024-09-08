@@ -1,5 +1,5 @@
 /* Asegurar que todos los elementos incluyan relleno y borde en el ancho y alto */
-* {
+{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -56,7 +56,7 @@ header {
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: fixed; /* Cambia a fixed para que el menú se mantenga en la misma posición en la pantalla */
-    top: 0; /* Alinea el menú al borde superior de la pantalla */
+    top: 100%; /* Alinea el menú al borde superior de la pantalla */
     right: 0; /* Alinea el menú al borde derecho de la pantalla */
     width: 90%; /* Ocupará el 90% del ancho de la pantalla en móviles */
     max-width: 300px; /* Define un ancho máximo más pequeño para el menú */
