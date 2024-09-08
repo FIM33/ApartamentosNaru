@@ -145,9 +145,6 @@ section {
     .services-list {
         grid-template-columns: 1fr; /* Una sola columna en pantallas más pequeñas */
     }
-}
-
-}
 
     /* Ajustar imágenes del carrusel */
     .carousel-image img {
@@ -158,12 +155,13 @@ section {
 
 /* Botón de disponibilidad */
 .availability-button {
-    text-align: center;
+    text-align: center; /* Asegura que el contenido interno esté centrado */
     margin-top: 20px;
+    width: 100%; /* Asegura que el contenedor ocupe el ancho completo del contenedor padre */
 }
 
 .availability-button .button {
-    display: inline-block;
+    display: inline-block; /* Permite que el botón se centre dentro del contenedor */
     background-color: #007BFF;
     color: white;
     padding: 0.75rem 1.5rem;
@@ -172,6 +170,9 @@ section {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    /* Asegúrate de que no haya márgenes adicionales que puedan afectar la alineación */
+    margin: 0; /* Elimina márgenes adicionales si los hubiera */
+    /* Opcional: Ajusta el tamaño del contenedor si es necesario */
 }
 
 .availability-button .button:hover {
