@@ -111,7 +111,6 @@ header {
         opacity: 1;
         transform: translateY(0);
     }
-}
 
 .nav-menu ul li a {
     display: block;
@@ -134,14 +133,12 @@ header {
         right: 5%;/* Ajusta la posición del menú para centrarlo horizontalmente */
         top: 100%;
     }
-}
 
 @media (max-width: 480px) {
     .nav-menu ul li a {
         font-size: 1em; /* Tamaño de fuente reducido en pantallas muy pequeñas */
         padding: 10px; /* Ajusta el relleno en pantallas muy pequeñas */
-    }
-} 
+    } 
 
 /* Servicios */
 .services {
