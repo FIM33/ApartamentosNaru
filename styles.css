@@ -64,12 +64,11 @@ header h1 {
 }
 
 /* Estilo para el menú cuando está activo */
-.nav-menu.active {
+.nav-menu.open {
     display: block;
-    height: auto; /* Ajusta la altura automáticamente cuando está activo */
 }
 
-/* Estilo del menú cuando se despliega */
+/* Estilo para el menú cuando se despliega */
 .nav-menu.open {
     height: auto; /* Altura automática para mostrar el contenido */
     padding: 10px 0; /* Padding para el contenido del menú */
@@ -130,6 +129,7 @@ header h1 {
         display: none; /* Oculta el icono de menú en pantallas grandes */
     }
 }
+
 
 /* Secciones */
 section {
