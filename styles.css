@@ -83,7 +83,7 @@ header h1 {
     display: none; /* Oculta el menú por defecto */
     position: absolute; /* Posicionamiento absoluto */
     right: 20px; /* Alinea el menú al borde derecho del encabezado */
-    bottom: 60px; /* Espacio desde el borde inferior del encabezado */
+    bottom: 0px; /* Espacio desde el borde inferior del encabezado */
     background: #fff; /* Fondo blanco del menú */
     border: 1px solid #ddd; /* Borde gris claro */
     border-radius: 8px; /* Bordes redondeados */
