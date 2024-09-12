@@ -40,6 +40,7 @@ header h1 {
     cursor: pointer;
     position: absolute;
     right: 20px; /* Posiciona el botón a la derecha del header */
+    top: 100%
     z-index: 2; /* Asegura que el botón esté por encima del menú */
 }
 
