@@ -14,138 +14,69 @@ body {
 }
 
 /* Estilos del encabezado */
-/* Estilos del encabezado */
+/* Estilos generales para el encabezado */
 header {
-    background-color: #333;
-    color: #fff;
+    position: relative; /* Necesario para posicionar el menú toggle en relación con el encabezado */
+    background-color: #fff; /* Color de fondo del encabezado */
+    padding: 10px;
     display: flex;
-    justify-content: center; /* Centra el contenido del header */
+    justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    position: relative; /* Permite el posicionamiento absoluto de los elementos hijos */
-    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
 }
 
-/* Título centrado en el header */
-header h1 {
-    margin: 0;
-    text-align: center;
-    flex: 1; /* Permite que el título se expanda para ocupar el espacio disponible */
-}
-
-/* Estilo del botón de menú */
+/* Estilos para el botón de menú */
 .menu-toggle {
+    position: absolute; /* Posicionar el botón de menú */
+    bottom: 10px; /* Espacio desde el fondo del encabezado */
+    right: 10px; /* Espacio desde el borde derecho del encabezado */
     background: none;
     border: none;
-    color: white;
-    font-size: 24px;
     cursor: pointer;
-    position: absolute;
-    right: 10px; /* Margen a la derecha */
-    bottom: 10px; /* Margen desde el borde inferior del header */
-    z-index: 2; /* Asegura que el botón esté por encima del menú */
-    transition: color 0.3s ease; /* Transición para el color del ícono */
+    font-size: 24px;
+    color: #000; /* Color inicial del ícono del botón */
 }
 
-/* Estilo del menú de navegación */
+.menu-toggle.active i {
+    color: #007bff; /* Color del ícono cuando el menú está desplegado */
+}
+
+/* Estilos para el menú de navegación */
 .nav-menu {
-    display: none; /* Oculta el menú inicialmente */
+    display: none; /* Ocultar el menú por defecto */
     position: absolute;
-    right: 10px; /* Alinea el menú a la derecha del header */
-    bottom: 0; /* Coloca el menú justo en el borde inferior del header */
-    background-color: #007BFF; /* Fondo azul para el menú de navegación */
-    border-radius: 5px;
-    padding: 0; /* Sin padding inicial para la animación */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 200px; /* Ajusta el ancho del menú */
-    z-index: 1; /* Coloca el menú por debajo del botón */
-    overflow: hidden; /* Oculta el contenido que se desborda */
-    max-height: 0; /* Inicialmente, el menú tiene altura 0 */
-    transition: max-height 0.3s ease; /* Transición para la altura del menú */
+    top: 100%; /* Colocar el menú justo debajo del encabezado */
+    right: 0;
+    background-color: #007bff; /* Fondo azul del menú */
+    width: 200px; /* Ancho del menú */
+    z-index: 10;
 }
 
-/* Estilo para el menú cuando está activo */
-.nav-menu.open {
-    display: block;
-    max-height: 300px; /* Ajusta según el contenido del menú */
-    padding: 10px 0; /* Padding para el contenido del menú */
-}
-
-/* Estilos para los elementos del menú */
 .nav-menu ul {
-    list-style: none;
-    margin: 0;
+    list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 .nav-menu ul li {
-    margin: 0;
+    border-bottom: 1px solid #fff; /* Línea divisoria entre los elementos del menú */
 }
 
 .nav-menu ul li a {
-    color: white;
-    text-decoration: none;
     display: block;
-    padding: 10px 20px;
-    transition: background-color 0.3s;
+    padding: 10px;
+    color: #fff; /* Color del texto del menú */
+    text-decoration: none;
 }
 
 .nav-menu ul li a:hover {
-    background-color: #0056b3; /* Cambia el color de fondo al hacer hover */
+    background-color: #0056b3; /* Fondo del elemento del menú al pasar el ratón */
 }
 
-/* Mostrar el icono de menú en azul cuando está activo */
-.menu-toggle.active {
-    color: #007BFF; /* Cambia el color a azul cuando el menú está activo */
+/* Estilos para mostrar el menú al activar el botón */
+.menu-toggle.active + .nav-menu {
+    display: block; /* Mostrar el menú cuando el botón está activo */
 }
 
-
-/* Secciones */
-section {
-    background: #fff;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 8px; /* Bordes redondeados */
-    max-width: 1200px;
-    width: 100%; /* Asegura que no se sobrepase el ancho del contenedor */
-    box-sizing: border-box; /* Incluye padding en el ancho total */
-}
-
-/* Carrusel */
-.carousel {
-    position: relative;
-    margin-bottom: 20px;
-    overflow: hidden; /* Oculta partes de la imagen fuera del contenedor */
-}
-
-.carousel-images {
-    display: flex;
-    transition: transform 0.5s ease; /* Transición suave para el cambio de imagen */
-}
-
-.carousel-image {
-    min-width: 100%;
-    box-sizing: border-box;
-}
-
-.carousel-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Controles del carrusel */
-.carousel-controls {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.carousel-controls label {
-    cursor: pointer;
-    font-size: 24px;
-    color: #007BFF;
-    margin: 0 10px;
-}
 
 /* Servicios */
 .services {
