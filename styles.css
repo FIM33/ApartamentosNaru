@@ -104,7 +104,7 @@ body {
 }
 
 .nav-menu ul li a:hover {
-    background-color: #f0f0f0; /* Fondo gris claro al pasar el ratón */
+    background-color: #003366; /* Fondo azul oscuro al pasar el ratón */
 }
 
 /* Estilos para las secciones */
