@@ -34,6 +34,7 @@ h1 {
     color: white;
     font-size: 24px;
     cursor: pointer;
+    z-index: 2; /* Asegura que el botón del menú esté por encima del nav-menu */
 }
 
 .menu-toggle.active {
@@ -51,6 +52,8 @@ h1 {
     padding: 10px 0;
     text-align: right;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 200px; /* Ajusta el ancho del menú */
+    z-index: 1; /* Coloca el menú por debajo del botón */
 }
 
 .nav-menu ul {
@@ -104,6 +107,7 @@ h1 {
         display: none; /* Oculta el icono de menú en pantallas grandes */
     }
 }
+
 /* Secciones */
 section {
     background: #fff;
