@@ -60,17 +60,14 @@ header h1 {
     width: 200px; /* Ajusta el ancho del menú */
     z-index: 1; /* Coloca el menú por debajo del botón */
     overflow: hidden; /* Oculta el contenido que se desborda */
-    transition: height 0.3s ease; /* Transición para la altura del menú */
+    transition: max-height 0.3s ease, padding 0.3s ease; /* Transición para la altura del menú */
+    max-height: 0; /* Inicia con altura cero */
 }
 
 /* Estilo para el menú cuando está activo */
 .nav-menu.open {
     display: block;
-}
-
-/* Estilo para el menú cuando se despliega */
-.nav-menu.open {
-    height: auto; /* Altura automática para mostrar el contenido */
+    max-height: 400px; /* Ajusta la altura máxima para el efecto de despliegue */
     padding: 10px 0; /* Padding para el contenido del menú */
 }
 
@@ -83,6 +80,11 @@ header h1 {
 
 .nav-menu ul li {
     margin: 0;
+    border-bottom: 1px solid #0056b3; /* Borde inferior para cada ítem de menú */
+}
+
+.nav-menu ul li:last-child {
+    border-bottom: none; /* Elimina el borde en el último ítem del menú */
 }
 
 .nav-menu ul li a {
@@ -118,6 +120,10 @@ header h1 {
     .nav-menu ul {
         display: flex;
         gap: 20px;
+    }
+
+    .nav-menu ul li {
+        border: none; /* Elimina los bordes en pantallas grandes */
     }
 
     .nav-menu ul li a {
