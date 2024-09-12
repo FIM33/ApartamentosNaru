@@ -1,4 +1,8 @@
 /* Estilo general del cuerpo */
+* {
+    box-sizing: border-box; /* Asegura que padding y borde no aumenten el ancho de los elementos */
+}
+
 body {
     font-family: Arial, sans-serif; /* Fuente general */
     line-height: 1.6; /* Espacio entre líneas */
@@ -6,6 +10,7 @@ body {
     padding: 0;
     background-color: #f4f4f4; /* Color de fondo claro */
     padding-bottom: 60px; /* Espacio para el pie de página */
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
 }
 
 /* Encabezado */
@@ -23,6 +28,8 @@ section {
     padding: 20px;
     border-radius: 8px; /* Bordes redondeados */
     max-width: 1200px;
+    width: 100%; /* Asegura que no se sobrepase el ancho del contenedor */
+    box-sizing: border-box; /* Incluye padding en el ancho total */
 }
 
 /* Carrusel */
@@ -121,6 +128,7 @@ footer {
     padding: 20px 10px;
     position: static; /* Pie de página en su lugar normal */
     width: 100%;
+    box-sizing: border-box;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
