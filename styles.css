@@ -32,6 +32,60 @@ header h1 {
     text-align: center; /* Centra el texto dentro del header */
     flex: 1; /* Ocupa el espacio disponible para alinear otros elementos */
 }
+/* Botón de menú toggle */
+.menu-toggle {
+    font-size: 24px; /* Tamaño del icono de menú */
+    cursor: pointer; /* Cursor en forma de puntero */
+    position: absolute; /* Posicionamiento absoluto */
+    bottom: 20px; /* Posición desde el fondo del encabezado */
+    right: 20px; /* Posición desde el borde derecho del encabezado */
+    z-index: 10; /* Asegura que el botón esté por encima del contenido */
+}
+
+/* Estilo del menú desplegable */
+.nav-menu {
+    display: none; /* Oculta el menú por defecto */
+    position: absolute; /* Posicionamiento absoluto */
+    bottom: 60px; /* Espacio desde la parte inferior del encabezado */
+    right: 20px; /* Alinea el menú al borde derecho del encabezado */
+    background: #fff; /* Fondo blanco del menú */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efecto flotante */
+    z-index: 9; /* Asegura que el menú esté debajo del botón de menú */
+    width: 200px; /* Ancho del menú desplegable */
+}
+
+/* Estilo de los elementos de la lista del menú */
+.nav-menu ul {
+    list-style: none; /* Elimina los bullets */
+    padding: 0; /* Elimina el padding */
+    margin: 0; /* Elimina el margen */
+}
+
+.nav-menu li {
+    border-bottom: 1px solid #ddd; /* Línea divisoria entre elementos */
+}
+
+.nav-menu li:last-child {
+    border-bottom: none; /* Elimina la línea divisoria del último elemento */
+}
+
+.nav-menu a {
+    display: block; /* Hace que los enlaces ocupen todo el ancho del contenedor */
+    padding: 10px; /* Padding interno */
+    color: #333; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+.nav-menu a:hover {
+    background-color: #f4f4f4; /* Color de fondo al pasar el ratón */
+}
+
+/* Estilo del menú cuando está visible */
+.nav-menu.show {
+    display: block; /* Muestra el menú */
+}
 
 /* Estilos para las secciones */
 section {
