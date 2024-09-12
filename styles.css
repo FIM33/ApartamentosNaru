@@ -13,46 +13,52 @@ body {
     overflow-x: hidden; /* Evita el desbordamiento horizontal */
 }
 
-/* Encabezado */
+/* Estilos del encabezado */
 header {
     background-color: #333;
     color: #fff;
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Centra el contenido del header */
     align-items: center;
     padding: 20px;
     position: relative;
 }
 
-h1 {
+/* Título centrado en el header */
+header h1 {
     margin: 0;
+    text-align: center;
+    flex: 1; /* Permite que el título ocupe el espacio disponible en el centro */
 }
 
+/* Estilo del botón de menú */
 .menu-toggle {
     background: none;
     border: none;
     color: white;
     font-size: 24px;
     cursor: pointer;
-    z-index: 2; /* Asegura que el botón del menú esté por encima del nav-menu */
+    position: absolute;
+    right: 20px; /* Posiciona el botón a la derecha del header */
+    z-index: 2; /* Asegura que el botón esté por encima del menú */
 }
 
 .menu-toggle.active {
     color: #007BFF; /* Cambia el color a azul cuando el menú está activo */
 }
 
-/* Estilos para el nav-menu cerrado inicialmente */
+/* Estilos para el menú de navegación */
 .nav-menu {
-    display: none;
+    display: none; /* Oculta el menú inicialmente */
     position: absolute;
-    right: 20px; /* Posiciona el menú a la derecha del header */
+    right: 20px; /* Alinea el menú a la derecha del header */
     top: 100%; /* Coloca el menú justo debajo del header */
-    background-color: #333;
+    background-color: #007BFF; /* Fondo azul para el menú de navegación */
     border-radius: 5px;
     padding: 10px 0;
-    text-align: right;
+    text-align: center; /* Centra el texto del menú */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 200px; /* Ajusta el ancho del menú */
+    width: 150px; /* Ajusta el ancho del menú */
     z-index: 1; /* Coloca el menú por debajo del botón */
 }
 
@@ -75,7 +81,7 @@ h1 {
 }
 
 .nav-menu ul li a:hover {
-    background-color: #007BFF; /* Cambia el color de fondo al hacer hover */
+    background-color: #0056b3; /* Cambia el color de fondo al hacer hover */
 }
 
 /* Mostrar el menú cuando se activa */
@@ -91,6 +97,8 @@ h1 {
         flex-direction: row;
         background-color: transparent;
         box-shadow: none;
+        width: auto; /* Ajusta el ancho del menú para pantallas grandes */
+        text-align: right; /* Alinea el texto del menú a la derecha */
     }
 
     .nav-menu ul {
