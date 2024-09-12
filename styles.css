@@ -4,165 +4,162 @@
 }
 
 body {
-    font-family: Arial, sans-serif; /* Fuente general */
-    line-height: 1.6; /* Espacio entre líneas */
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4; /* Color de fondo claro */
-    padding-bottom: 60px; /* Espacio para el pie de página */
-    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+    font-family: Arial, sans-serif; /* Fuente general usada en todo el documento */
+    line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
+    margin: 0; /* Elimina los márgenes por defecto del body */
+    padding: 0; /* Elimina los padding por defecto */
+    background-color: #f4f4f4; /* Fondo de color gris claro para todo el documento */
+    padding-bottom: 60px; /* Añade espacio en la parte inferior del body para el pie de página */
+    overflow-x: hidden; /* Evita el desbordamiento horizontal y las barras de desplazamiento en esa dirección */
 }
 
 /* Estilos del encabezado */
-/* Estilos generales para el encabezado */
 header {
-    position: relative; /* Necesario para posicionar el menú toggle en relación con el encabezado */
-    background-color: #fff; /* Color de fondo del encabezado */
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 50; /* Se asegura de que esté por encima del contenido */
+    position: relative; /* Necesario para que los elementos absolutos (como el botón del menú) se posicionen en relación a este contenedor */
+    background-color: #fff; /* Color de fondo blanco para el encabezado */
+    padding: 10px; /* Espaciado interno de 10px en todo el encabezado */
+    display: flex; /* Aplica flexbox para alinear los elementos en línea (horizontal) dentro del encabezado */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos (izquierda y derecha) */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+    z-index: 50; /* Define la jerarquía para que el encabezado se superponga a otros elementos si es necesario */
 }
 
 /* Estilos para el botón de menú */
 .menu-toggle {
-    position: fixed; /* Ahora es fijo, permanece en el mismo lugar al hacer scroll */
-    bottom: 10px; /* Espacio desde el fondo de la ventana */
-    right: 10px; /* Espacio desde el borde derecho */
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 24px;
-    color: #000; /* Color inicial del ícono del botón */
-    z-index: 1000; /* Para asegurarse de que esté siempre visible por encima de otros elementos */
+    position: fixed; /* Posiciona el botón en un lugar fijo en la pantalla, aunque el usuario haga scroll */
+    bottom: 10px; /* Ubica el botón a 10px del borde inferior de la ventana */
+    right: 10px; /* Ubica el botón a 10px del borde derecho de la ventana */
+    background: none; /* Sin fondo para el botón */
+    border: none; /* Elimina los bordes del botón */
+    cursor: pointer; /* Cambia el cursor a "puntero" (mano) cuando pasa por encima */
+    font-size: 24px; /* Define un tamaño grande para el ícono o texto dentro del botón */
+    color: #000; /* Color negro para el contenido del botón (normalmente un ícono de menú) */
+    z-index: 1000; /* Muy alto para asegurarse de que el botón esté siempre visible sobre otros elementos */
 }
 
 .menu-toggle.active i {
-    color: #007bff; /* Color del ícono cuando el menú está desplegado */
+    color: #007bff; /* Cambia el color del ícono del botón cuando el menú está activo (desplegado) */
 }
 
 /* Estilos para el menú de navegación */
 .nav-menu {
-    display: none; /* Ocultar el menú por defecto */
-    position: absolute;
-    top: 100%; /* Colocar el menú justo debajo del encabezado */
-    right: 0;
-    background-color: #007bff; /* Fondo azul del menú */
-    width: 200px; /* Ancho del menú */
-    z-index: 100; /* Asegura que el menú esté por encima de otros elementos */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Añadir sombra para mayor claridad */
+    display: none; /* Por defecto, el menú está oculto */
+    position: absolute; /* Posiciona el menú con respecto al encabezado */
+    top: 100%; /* El menú aparece justo debajo del encabezado */
+    right: 0; /* Alinea el menú con el borde derecho del encabezado */
+    background-color: #007bff; /* Fondo azul para el menú */
+    width: 200px; /* Ancho fijo del menú */
+    z-index: 100; /* Asegura que el menú esté por encima de otros elementos del contenido */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra suave al menú para hacerlo más destacado */
 }
 
 .nav-menu ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    list-style-type: none; /* Elimina los bullets de la lista de navegación */
+    padding: 0; /* Elimina el padding interno del ul */
+    margin: 0; /* Elimina los márgenes del ul */
 }
 
 .nav-menu ul li {
-    border-bottom: 1px solid #fff; /* Línea divisoria entre los elementos del menú */
+    border-bottom: 1px solid #fff; /* Añade una línea blanca que separa cada elemento del menú */
 }
 
 .nav-menu ul li a {
-    display: block;
-    padding: 10px;
-    color: #fff; /* Color del texto del menú */
-    text-decoration: none;
+    display: block; /* Cada enlace ocupa todo el ancho disponible en su contenedor */
+    padding: 10px; /* Espaciado interno de 10px en cada enlace */
+    color: #fff; /* Texto blanco para los enlaces */
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
 }
 
 .nav-menu ul li a:hover {
-    background-color: #0056b3; /* Fondo del elemento del menú al pasar el ratón */
+    background-color: #0056b3; /* Cambia el fondo a un azul más oscuro cuando el ratón pasa por encima */
 }
 
 /* Estilos para mostrar el menú al activar el botón */
 .menu-toggle.active + .nav-menu {
-    display: block; /* Mostrar el menú cuando el botón está activo */
+    display: block; /* Cuando el botón de menú está activo, se muestra el menú */
 }
-
 
 /* Servicios */
 .services {
-    margin-top: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    margin-top: 20px; /* Espacio superior de 20px respecto a lo anterior */
+    padding: 20px; /* Espaciado interno de 20px en todo el bloque de servicios */
+    border: 1px solid #ddd; /* Borde gris claro alrededor del bloque */
+    border-radius: 8px; /* Bordes redondeados */
 }
 
 /* Lista de servicios */
 .services-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
-    gap: 20px; /* Espacio entre los elementos */
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    display: grid; /* Utiliza un sistema de cuadrícula (grid) para organizar los elementos */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales (50% cada una) */
+    gap: 20px; /* Espacio de 20px entre las columnas y filas */
+    list-style: none; /* Elimina los bullets de la lista */
+    padding: 0; /* Elimina el padding de la lista */
+    margin: 0; /* Elimina el margen de la lista */
 }
 
 /* Cada ítem de servicio */
 .services-list li {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Añade espacio de 10px debajo de cada ítem */
 }
 
 /* Ajustes para pantallas más pequeñas */
 @media (max-width: 768px) {
     .services-list {
-        grid-template-columns: 1fr; /* Una sola columna en pantallas más pequeñas */
+        grid-template-columns: 1fr; /* En pantallas pequeñas, solo una columna (100% ancho) */
     }
 }
 
 /* Botón de disponibilidad */
 .availability-button {
-    text-align: center;
-    margin-top: 20px;
+    text-align: center; /* Centra el botón dentro del contenedor */
+    margin-top: 20px; /* Añade espacio superior de 20px */
 }
 
 .availability-button .button {
-    display: inline-block;
-    background-color: #007BFF;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    display: inline-block; /* El botón se comporta como un elemento en línea pero con características de bloque */
+    background-color: #007BFF; /* Color de fondo azul */
+    color: white; /* Texto blanco */
+    padding: 0.75rem 1.5rem; /* Espaciado interno del botón: 0.75 rem vertical y 1.5 rem horizontal */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    text-decoration: none; /* Elimina el subrayado del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo en el hover */
 }
 
 .availability-button .button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Cambia el color de fondo a azul más oscuro al pasar el ratón */
 }
 
 /* Pie de página */
 footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 10px;
-    position: static; /* Pie de página en su lugar normal */
-    width: 100%;
-    box-sizing: border-box;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    background: #333; /* Fondo oscuro para el pie de página */
+    color: #fff; /* Texto blanco */
+    text-align: center; /* Texto centrado */
+    padding: 20px 10px; /* Espaciado interno de 20px arriba y abajo, 10px a los lados */
+    position: static; /* El pie de página permanece en su posición normal en el flujo del documento */
+    width: 100%; /* Ocupa el 100% del ancho */
+    box-sizing: border-box; /* Asegura que padding y border no aumenten el ancho total del elemento */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil en la parte superior del pie de página */
 }
 
 /* Icono de Instagram en el pie de página */
 .social-media a {
-    color: #fff;
-    font-size: 48px;
-    text-decoration: none;
-    margin: 0 10px;
-    display: inline-block;
+    color: #fff; /* Color blanco para el ícono de Instagram */
+    font-size: 48px; /* Tamaño grande del ícono */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    margin: 0 10px; /* Margen horizontal entre los íconos */
+    display: inline-block; /* Comportamiento de bloque en línea para que el ícono sea tratado como un botón */
 }
 
 .social-media a:hover {
-    color: #e1306c; /* Color de Instagram en hover */
+    color: #e1306c; /* Cambia el color al pasar el ratón, usando el color típico de Instagram */
 }
 
 /* Ajustes para el tamaño de los botones en dispositivos móviles */
 @media (max-width: 600px) {
     .availability-button .button {
-        padding: 0.5rem 1rem;
-        font-size: 14px;
+        padding: 0.5rem 1rem; /* Disminuye el padding para pantallas pequeñas */
+        font-size: 14px; /* Reduce el tamaño del texto en pantallas pequeñas */
     }
 }
-
