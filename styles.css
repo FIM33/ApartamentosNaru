@@ -22,18 +22,20 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 100; /* Añadir z-index para asegurarse de que se superponga al contenido */
 }
 
 /* Estilos para el botón de menú */
 .menu-toggle {
-    position: absolute; /* Posicionar el botón de menú */
-    bottom: 10px; /* Espacio desde el fondo del encabezado */
-    right: 10px; /* Espacio desde el borde derecho del encabezado */
+    position: fixed; /* Posicionar el botón de menú en un lugar fijo para evitar desbordamiento */
+    bottom: 10px; /* Espacio desde el fondo de la ventana */
+    right: 10px; /* Espacio desde el borde derecho */
     background: none;
     border: none;
     cursor: pointer;
     font-size: 24px;
     color: #000; /* Color inicial del ícono del botón */
+    z-index: 1000; /* Asegura que el botón esté siempre por encima */
 }
 
 .menu-toggle.active i {
@@ -49,6 +51,7 @@ header {
     background-color: #007bff; /* Fondo azul del menú */
     width: 200px; /* Ancho del menú */
     z-index: 10;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para mayor claridad */
 }
 
 .nav-menu ul {
@@ -76,7 +79,6 @@ header {
 .menu-toggle.active + .nav-menu {
     display: block; /* Mostrar el menú cuando el botón está activo */
 }
-
 
 /* Servicios */
 .services {
