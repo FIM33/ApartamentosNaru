@@ -73,7 +73,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efecto flotante */
     width: 200px; /* Ancho del menú desplegable */
     opacity: 0; /* Comienza oculto */
-    max-height: 500; /* Comienza con altura 0 */
+    max-height: 0; /* Comienza con altura 0 */
     overflow: hidden; /* Oculta el contenido que desborda */
     transition: opacity 0.3s ease, max-height 0.3s ease; /* Transiciones para opacidad y altura */
 }
