@@ -52,7 +52,7 @@ header h1 {
     display: none; /* Oculta el menú inicialmente */
     position: absolute;
     right: 10px; /* Alinea el menú a la derecha del header */
-    bottom: 0; /* Coloca el menú justo en el borde inferior del header */
+    bottom: 50px; /* Coloca el menú justo en el borde inferior del header (considerando el margen del botón de menú) */
     background-color: #007BFF; /* Fondo azul para el menú de navegación */
     border-radius: 5px;
     padding: 0; /* Sin padding inicial para la animación */
@@ -60,15 +60,20 @@ header h1 {
     width: 200px; /* Ajusta el ancho del menú */
     z-index: 1; /* Coloca el menú por debajo del botón */
     overflow: hidden; /* Oculta el contenido que se desborda */
-    transition: max-height 0.3s ease, padding 0.3s ease; /* Transición para la altura del menú */
-    max-height: 0; /* Inicia con altura cero */
+    transition: max-height 0.3s ease; /* Transición para la altura del menú */
+    max-height: 0; /* Inicialmente sin altura */
 }
 
 /* Estilo para el menú cuando está activo */
 .nav-menu.open {
     display: block;
-    max-height: 400px; /* Ajusta la altura máxima para el efecto de despliegue */
+    max-height: 400px; /* Altura máxima para mostrar el contenido (ajusta según el contenido) */
     padding: 10px 0; /* Padding para el contenido del menú */
+}
+
+/* Estilo para el menú cuando se despliega */
+.nav-menu.open {
+    height: auto; /* Altura automática para mostrar el contenido */
 }
 
 /* Estilos para los elementos del menú */
@@ -80,11 +85,6 @@ header h1 {
 
 .nav-menu ul li {
     margin: 0;
-    border-bottom: 1px solid #0056b3; /* Borde inferior para cada ítem de menú */
-}
-
-.nav-menu ul li:last-child {
-    border-bottom: none; /* Elimina el borde en el último ítem del menú */
 }
 
 .nav-menu ul li a {
@@ -120,11 +120,6 @@ header h1 {
     .nav-menu ul {
         display: flex;
         gap: 20px;
-        margin: 0; /* Elimina el margen para que se ajuste bien el menú */
-    }
-
-    .nav-menu ul li {
-        border: none; /* Elimina los bordes en pantallas grandes */
     }
 
     .nav-menu ul li a {
