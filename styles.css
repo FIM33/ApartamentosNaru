@@ -44,9 +44,10 @@ header h1 {
     right: 10px; /* Margen a la derecha */
     bottom: 10px; /* Margen desde el borde inferior del header */
     z-index: 2; /* Asegura que el botón esté por encima del menú */
+    transition: color 0.3s ease; /* Transición para el color del ícono */
 }
 
-/* Estilos para el menú de navegación */
+/* Estilo del menú de navegación */
 .nav-menu {
     display: none; /* Oculta el menú inicialmente */
     position: absolute;
@@ -54,18 +55,27 @@ header h1 {
     bottom: 50px; /* Coloca el menú justo en el borde inferior del header (considerando el margen del botón de menú) */
     background-color: #007BFF; /* Fondo azul para el menú de navegación */
     border-radius: 5px;
-    padding: 10px 0;
-    text-align: center; /* Centra el texto del menú */
+    padding: 0; /* Sin padding inicial para la animación */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 150px; /* Ajusta el ancho del menú */
+    width: 200px; /* Ajusta el ancho del menú */
     z-index: 1; /* Coloca el menú por debajo del botón */
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    transition: height 0.3s ease; /* Transición para la altura del menú */
 }
 
 /* Estilo para el menú cuando está activo */
 .nav-menu.active {
     display: block;
+    height: auto; /* Ajusta la altura automáticamente cuando está activo */
 }
 
+/* Estilo del menú cuando se despliega */
+.nav-menu.open {
+    height: auto; /* Altura automática para mostrar el contenido */
+    padding: 10px 0; /* Padding para el contenido del menú */
+}
+
+/* Estilos para los elementos del menú */
 .nav-menu ul {
     list-style: none;
     margin: 0;
@@ -102,7 +112,8 @@ header h1 {
         background-color: transparent;
         box-shadow: none;
         width: auto; /* Ajusta el ancho del menú para pantallas grandes */
-        text-align: right; /* Alinea el texto del menú a la derecha */
+        height: auto; /* Altura automática para pantallas grandes */
+        padding: 0; /* Sin padding para pantallas grandes */
     }
 
     .nav-menu ul {
@@ -119,7 +130,6 @@ header h1 {
         display: none; /* Oculta el icono de menú en pantallas grandes */
     }
 }
-
 
 /* Secciones */
 section {
