@@ -22,7 +22,7 @@ header {
     justify-content: center; /* Centra el contenido del header */
     align-items: center;
     padding: 20px;
-    position: relative; /* Para permitir el posicionamiento absoluto de los elementos hijos */
+    position: relative; /* Permite el posicionamiento absoluto de los elementos hijos */
     box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
 }
 
@@ -55,13 +55,13 @@ header h1 {
     bottom: 50px; /* Coloca el menú justo en el borde inferior del header (considerando el margen del botón de menú) */
     background-color: #007BFF; /* Fondo azul para el menú de navegación */
     border-radius: 5px;
-    padding: 0; /* Sin padding inicial para la animación */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 200px; /* Ajusta el ancho del menú */
     z-index: 1; /* Coloca el menú por debajo del botón */
     overflow: hidden; /* Oculta el contenido que se desborda */
     transition: max-height 0.3s ease; /* Transición para la altura del menú */
     max-height: 0; /* Inicialmente sin altura */
+    padding: 0; /* Sin padding inicial para la animación */
 }
 
 /* Estilo para el menú cuando está activo */
@@ -71,12 +71,7 @@ header h1 {
     padding: 10px 0; /* Padding para el contenido del menú */
 }
 
-/* Estilo para el menú cuando se despliega */
-.nav-menu.open {
-    height: auto; /* Altura automática para mostrar el contenido */
-}
-
-/* Estilos para los elementos del menú */
+/* Estilo para los elementos del menú */
 .nav-menu ul {
     list-style: none;
     margin: 0;
@@ -115,6 +110,7 @@ header h1 {
         width: auto; /* Ajusta el ancho del menú para pantallas grandes */
         height: auto; /* Altura automática para pantallas grandes */
         padding: 0; /* Sin padding para pantallas grandes */
+        max-height: none; /* Sin limitación de altura */
     }
 
     .nav-menu ul {
@@ -131,6 +127,7 @@ header h1 {
         display: none; /* Oculta el icono de menú en pantallas grandes */
     }
 }
+
 
 /* Secciones */
 section {
