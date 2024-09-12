@@ -3,6 +3,7 @@
     box-sizing: border-box; /* Asegura que padding y borde no aumenten el tamaño total de los elementos */
 }
 
+/* Estilo general del body */
 body {
     font-family: Arial, sans-serif; /* Fuente general del documento */
     line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
@@ -11,6 +12,7 @@ body {
     background-color: #f4f4f4; /* Fondo gris claro */
     padding-bottom: 60px; /* Añade espacio para el pie de página */
     overflow-x: hidden; /* Evita el desbordamiento horizontal */
+    text-align: center; /* Centra el texto en todo el body */
 }
 
 /* Estilos para el encabezado (header) */
@@ -30,8 +32,6 @@ header h1 {
     text-align: center; /* Centra el texto dentro del header */
     flex: 1; /* Ocupa el espacio disponible para alinear otros elementos */
 }
-
-
 
 /* Estilos para las secciones */
 section {
@@ -164,3 +164,4 @@ footer {
         font-size: 14px; /* Reduce el tamaño de la fuente en móviles */
     }
 }
+
