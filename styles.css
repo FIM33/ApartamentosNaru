@@ -22,12 +22,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100; /* Añadir z-index para asegurarse de que se superponga al contenido */
+    z-index: 50; /* Se asegura de que esté por encima del contenido */
 }
 
 /* Estilos para el botón de menú */
 .menu-toggle {
-    position: fixed; /* Posicionar el botón de menú en un lugar fijo para evitar desbordamiento */
+    position: fixed; /* Ahora es fijo, permanece en el mismo lugar al hacer scroll */
     bottom: 10px; /* Espacio desde el fondo de la ventana */
     right: 10px; /* Espacio desde el borde derecho */
     background: none;
@@ -35,7 +35,7 @@ header {
     cursor: pointer;
     font-size: 24px;
     color: #000; /* Color inicial del ícono del botón */
-    z-index: 1000; /* Asegura que el botón esté siempre por encima */
+    z-index: 1000; /* Para asegurarse de que esté siempre visible por encima de otros elementos */
 }
 
 .menu-toggle.active i {
@@ -50,8 +50,8 @@ header {
     right: 0;
     background-color: #007bff; /* Fondo azul del menú */
     width: 200px; /* Ancho del menú */
-    z-index: 10;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para mayor claridad */
+    z-index: 100; /* Asegura que el menú esté por encima de otros elementos */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Añadir sombra para mayor claridad */
 }
 
 .nav-menu ul {
@@ -79,6 +79,7 @@ header {
 .menu-toggle.active + .nav-menu {
     display: block; /* Mostrar el menú cuando el botón está activo */
 }
+
 
 /* Servicios */
 .services {
@@ -164,3 +165,4 @@ footer {
         font-size: 14px;
     }
 }
+
