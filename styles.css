@@ -170,6 +170,7 @@ section {
     list-style: none; /* Elimina los bullets */
     padding: 0; /* Elimina el padding */
     margin: 0; /* Elimina el margen */
+    text-align: rigth; 
 }
 
 /* Cada ítem de servicio */
