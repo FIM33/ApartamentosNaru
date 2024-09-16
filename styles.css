@@ -209,7 +209,7 @@ section {
 
 /* Cada ítem de servicio */
 .services li {
-    margin-right: 10p; /* Espacio a la derecha de los item */
+    margin-right: 10px; /* Espacio a la derecha de los item */
     margin-bottom: 10px; /* Espacio inferior entre ítems */
     display: flex; /* Usa flexbox para alinear los íconos y el texto */
     align-items: center; /* Centra verticalmente el contenido */
@@ -219,7 +219,7 @@ section {
 
 /* Iconos de servicio */
 .services i {
-    margin-right: 10px; /* Espacio a la derecha del ícono */
+    margin-right: 20px; /* Espacio a la derecha del ícono */
     color: #007BFF; /* Color de los íconos (ajusta según tu diseño) */
 }
 
