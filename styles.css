@@ -153,7 +153,6 @@ section {
     color: #007BFF; /* Color azul para los controles */
     margin: 0 10px; /* Espacio horizontal entre los controles */
 }
-}
 /* Lista de servicios */
 .services ul {
     display: grid; /* Usa un grid para organizar los elementos */
@@ -162,6 +161,8 @@ section {
     list-style: none; /* Elimina los bullets */
     padding: 0; /* Elimina el padding */
     margin: 0; /* Elimina el margen */
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Bordes redondeados */
     
 }
 
