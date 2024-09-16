@@ -188,27 +188,34 @@ section {
     grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales en pantallas grandes */
     gap: 20px; /* Espacio entre los elementos */
     list-style: none; /* Elimina los bullets */
-    padding: 0; /* Elimina el padding */
+    padding: 20px; /* Agrega un padding interno a la lista para que no toquen los bordes */
     margin: 0; /* Elimina el margen */
     border: 3px solid #007BFF;
     border-radius: 8px; /* Bordes redondeados */
-    
 }
 
 /* Cada ítem de servicio */
 .services li {
-    margin-right: 10px; /* Espacio a la derecha de los item */
-    margin-bottom: 10px; /* Espacio inferior entre ítems */
+    padding: 10px; /* Añade espacio interno entre el contenido y el borde del ítem */
+    margin: 0; /* Elimina márgenes para mantener el layout limpio */
     display: flex; /* Usa flexbox para alinear los íconos y el texto */
     align-items: center; /* Centra verticalmente el contenido */
-    justify-content: flex start; /* Centra horizontalmente el contenido */
-    
+    justify-content: flex-start; /* Alinea el contenido al inicio horizontalmente */
+    border: 1px solid #ddd; /* Añade un borde para darle estructura a cada ítem */
+    border-radius: 4px; /* Bordes redondeados para cada ítem */
 }
 
 /* Iconos de servicio */
 .services i {
-    margin-right: 20px; /* Espacio a la derecha del ícono */
+    margin-right: 15px; /* Ajusta el espacio a la derecha del ícono */
     color: #007BFF; /* Color de los íconos (ajusta según tu diseño) */
+    font-size: 1.5em; /* Aumenta el tamaño del ícono si es necesario */
+}
+
+/* Texto de servicio */
+.services li span {
+    flex: 1; /* Deja que el texto ocupe todo el espacio disponible */
+    color: #333; /* Color del texto */
 }
 
 /* Ajustes para pantallas más pequeñas */
