@@ -121,6 +121,14 @@ header h1 {
     transition-delay: 0.3s;
 }
 
+/* Estilo para las cajas de los ítems del menú */
+.nav-menu ul li {
+    display: block; /* Asegura que cada ítem ocupe su propio bloque */
+    background: #007BFF; /* Fondo de los ítems */
+    border-radius: 4px; /* Bordes redondeados para cada ítem */
+    transition: background-color 0.3s ease, padding 0.3s ease; /* Transición suave para el fondo y padding */
+}
+
 /* Estilo para los enlaces dentro del menú */
 .nav-menu ul li a {
     color: #fff; /* Color del texto */
