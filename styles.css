@@ -53,18 +53,6 @@ header h1 {
             opacity: 1;
         }
 
-
-body {
-    font-family: Arial, sans-serif; /* Fuente general del documento */
-    line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
-    margin: 0; /* Elimina el margen predeterminado del body */
-    padding: 0; /* Elimina el padding predeterminado del body */
-    background-color: #f4f4f4; /* Fondo gris claro */
-    padding-bottom: 60px; /* Añade espacio para el pie de página */
-    overflow-x: hidden; /* Evita el desbordamiento horizontal */
-}
-
-
 /* Estilo del botón de menú */
 .menu-toggle {
     background: none; /* Sin fondo */
