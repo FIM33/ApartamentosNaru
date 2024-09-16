@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-   
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,30 +7,49 @@
     <link rel="stylesheet" href="styles.css">
     <meta name="description" content="Explora nuestros modernos apartamentos en alquiler en el corazón de la ciudad. Encuentra el lugar perfecto para tu estancia con imágenes detalladas y descripciones.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-     
 </head>
 <body>
-    
     <!-- Encabezado -->
-   <header>
-        <h1>SobreNosotros</h1>
+    <header>
+        <h1>Sobre Nosotros</h1>
         <button class="menu-toggle" aria-label="Toggle Navigation">
             <i class="fas fa-bars"></i>
         </button>
         <nav class="nav-menu">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li> <!-- Añadido un enlace de contacto -->
             </ul>
         </nav>
-      <!-- Carrusel de imágenes automático en el header -->
+        <!-- Carrusel de imágenes automático en el header -->
         <div class="image-slider">
-            <img src="images/.jpg" alt="Imagen 1 del carrusel" class="slider-image active">
-            <img src="images/.jpg" alt="Imagen 2 del carrusel" class="slider-image">
+            <img src="images/imagen1.jpg" alt="Imagen 1 del carrusel" class="slider-image active">
+            <img src="images/imagen2.jpg" alt="Imagen 2 del carrusel" class="slider-image">
+            <!-- Asegúrate de que las imágenes existan y estén correctamente nombradas -->
         </div>
     </header>
-      <!-- Pie de página -->
+
+    <!-- Sección principal -->
+    <main>
+        <section class="about-us">
+            <h2>Quiénes Somos</h2>
+            <p>En Apartamentos en Alquiler, nos especializamos en ofrecer alojamientos modernos y cómodos en el corazón de la ciudad. Nuestro equipo está comprometido a proporcionar la mejor experiencia para tu estancia, ya sea que estés aquí por negocios o placer.</p>
+            <p>Ofrecemos una variedad de apartamentos diseñados para satisfacer tus necesidades, con una gama de servicios incluidos para garantizar una estancia placentera.</p>
+        </section>
+
+        <section class="contact-info">
+            <h2>Contacto</h2>
+            <p>¿Tienes preguntas o necesitas más información? No dudes en ponerte en contacto con nosotros:</p>
+            <ul>
+                <li><i class="fas fa-envelope"></i> Email: info@apartamentosalquiler.com</li>
+                <li><i class="fas fa-phone"></i> Teléfono: +34 123 456 789</li>
+                <li><i class="fas fa-map-marker-alt"></i> Dirección: Calle de Ejemplo, 123, Ciudad, País</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
     <footer>
         <p>&copy; 2024 Apartamentos en Alquiler. Todos los derechos reservados.</p>
         <div class="social-media">
@@ -40,7 +58,8 @@
             </a>
         </div>
     </footer>
+
     <script src="scriptmenu.js"></script>
-   <script src="transicion.js"></script>
+    <script src="transicion.js"></script>
 </body>
 </html>
