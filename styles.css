@@ -111,6 +111,30 @@ body {
 .nav-menu ul li {
     margin: 0; /* Elimina el margen */
 }
+/* Estilo para cada elemento del menú */
+.nav-menu ul li {
+    opacity: 0; /* Los ítems empiezan invisibles */
+    transform: translateY(-20px); /* Los ítems están inicialmente movidos hacia arriba */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transición para que aparezcan suavemente */
+}
+
+/* Cuando el menú está visible, los ítems se mostrarán */
+.nav-menu.show ul li {
+    opacity: 1; /* Los ítems serán visibles */
+    transform: translateY(0); /* Los ítems vuelven a su posición original */
+}
+
+/* Añadimos un retraso a cada ítem para que aparezcan en cascada */
+.nav-menu.show ul li:nth-child(1) {
+    transition-delay: 0.1s;
+}
+.nav-menu.show ul li:nth-child(2) {
+    transition-delay: 0.2s;
+}
+.nav-menu.show ul li:nth-child(3) {
+    transition-delay: 0.3s;
+}
+/* Si tienes más elementos, continúa aumentando el delay */
 
 .nav-menu ul li a {
     color: #fff; /* Color del texto */
