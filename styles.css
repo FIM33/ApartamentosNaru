@@ -161,7 +161,7 @@ section {
     list-style: none; /* Elimina los bullets */
     padding: 0; /* Elimina el padding */
     margin: 0; /* Elimina el margen */
-    border: 1px solid #ddd;
+    border: 3px solid #007BFF;
     border-radius: 8px; /* Bordes redondeados */
     
 }
@@ -172,8 +172,7 @@ section {
     text-align: left; /* Alinea el texto a la izquierda dentro del ítem */
     display: flex; /* Usa flexbox para alinear los íconos y el texto */
     align-items: center; /* Centra verticalmente el contenido */
-    border: 1px solid #ddd;
-    border-radius: 8px; /* Bordes redondeados */
+    
 }
 
 /* Iconos de servicio */
