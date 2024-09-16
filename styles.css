@@ -32,10 +32,27 @@ header h1 {
     text-align: center; /* Centra el texto dentro del header */
     flex: 1; /* Ocupa el espacio disponible para alinear otros elementos */
 }
-/* Estilo general del cuerpo */
-* {
-    box-sizing: border-box; /* Asegura que padding y borde no aumenten el tamaño total de los elementos */
-}
+ .image-slider {
+            position: relative;
+            width: 100%; /* Ajusta el ancho de acuerdo a tu necesidad */
+            height: 400px; /* Ajusta la altura según sea necesario */
+            overflow: hidden;
+        }
+
+        .slider-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease; /* Transición suave de 1 segundo */
+        }
+
+        .slider-image.active {
+            opacity: 1;
+        }
+
 
 body {
     font-family: Arial, sans-serif; /* Fuente general del documento */
