@@ -52,7 +52,7 @@ body {
 .menu-toggle {
     background: none; /* Sin fondo */
     border: none; /* Sin borde */
-    color: white; /* Color del ícono en blanco */
+    color: #007BFF; /* Color del ícono en azul */
     font-size: 24px; /* Tamaño del ícono del menú */
     cursor: pointer; /* Cursor en forma de puntero */
     position: absolute; /* Posicionamiento absoluto */
@@ -67,7 +67,7 @@ body {
     position: absolute; /* Posicionamiento absoluto */
     right: 20px; /* Alinea el menú al borde derecho del encabezado */
     top: 100% ; /* Espacio desde el borde inferior del encabezado */
-    background: #fff; /* Fondo blanco del menú */
+    background: #007BFF; /* Fondo blanco del menú */
     border: 1px solid #ddd; /* Borde gris claro */
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efecto flotante */
@@ -96,7 +96,7 @@ body {
 }
 
 .nav-menu ul li a {
-    color: #333; /* Color del texto */
+    color: #fff; /* Color del texto */
     text-decoration: none; /* Elimina el subrayado */
     display: block; /* Hace que el enlace ocupe todo el bloque */
     padding: 10px 20px; /* Padding interno */
