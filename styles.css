@@ -169,7 +169,6 @@ section {
 /* Cada ítem de servicio */
 .services li {
     margin-bottom: 10px; /* Espacio inferior entre ítems */
-    text-align: center; /* Alinea el texto al centro dentro del ítem */
     display: flex; /* Usa flexbox para alinear los íconos y el texto */
     align-items: center; /* Centra verticalmente el contenido */
     justify-content: center; /* Centra horizontalmente el contenido */
