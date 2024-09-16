@@ -68,28 +68,29 @@ header h1 {
 
 /* Estilos para el menú de navegación */
 .nav-menu {
-    display: none; /* Oculta el menú por defecto */
     position: absolute; /* Posicionamiento absoluto */
     right: 20px; /* Alinea el menú al borde derecho del encabezado */
-    top: 100% ; /* Espacio desde el borde inferior del encabezado */
-    background: #007BFF; /* Fondo blanco del menú */
+    top: 100%; /* Espacio desde el borde inferior del encabezado */
+    background: #007BFF; /* Fondo azul */
     border: 1px solid #ddd; /* Borde gris claro */
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efecto flotante */
     width: 200px; /* Ancho del menú desplegable */
     opacity: 0; /* Comienza oculto */
+    visibility: hidden; /* Oculta visualmente pero sin eliminar del flujo del documento */
     max-height: 0; /* Comienza con altura 0 */
     overflow: hidden; /* Oculta el contenido que desborda */
-    transition: opacity 0.3s ease, max-height 0.3s ease; /* Transiciones para opacidad y altura */
+    transition: opacity 0.3s ease, max-height 0.3s ease, visibility 0.3s ease; /* Transiciones para opacidad, visibilidad y altura */
 }
 
 /* Menú visible */
 .nav-menu.show {
-    display: block; /* Muestra el menú */
     opacity: 1; /* Hace el menú completamente visible */
+    visibility: visible; /* Hace visible el menú */
     max-height: 500px; /* Ajusta la altura máxima del menú cuando es visible */
 }
 
+/* Estilo para los ítems del menú */
 .nav-menu ul {
     list-style: none; /* Elimina los bullets */
     padding: 0; /* Elimina el padding */
@@ -98,9 +99,6 @@ header h1 {
 
 .nav-menu ul li {
     margin: 0; /* Elimina el margen */
-}
-/* Estilo para cada elemento del menú */
-.nav-menu ul li {
     opacity: 0; /* Los ítems empiezan invisibles */
     transform: translateY(-20px); /* Los ítems están inicialmente movidos hacia arriba */
     transition: opacity 0.5s ease, transform 0.5s ease; /* Transición para que aparezcan suavemente */
@@ -122,8 +120,8 @@ header h1 {
 .nav-menu.show ul li:nth-child(3) {
     transition-delay: 0.3s;
 }
-/* Si tienes más elementos, continúa aumentando el delay */
 
+/* Estilo para los enlaces dentro del menú */
 .nav-menu ul li a {
     color: #fff; /* Color del texto */
     text-decoration: none; /* Elimina el subrayado */
@@ -133,8 +131,9 @@ header h1 {
 }
 
 .nav-menu ul li a:hover {
-    background-color: #007BFF; /* Fondo azul oscuro al pasar el ratón */
+    background-color: #0056b3; /* Fondo azul oscuro al pasar el ratón */
 }
+
 
 /* Estilos para las secciones */
 section {
