@@ -162,8 +162,7 @@ section {
     list-style: none; /* Elimina los bullets */
     padding: 0; /* Elimina el padding */
     margin: 0; /* Elimina el margen */
-    border: 1px solid #ddd;
-    border-radius: 8px; /* Bordes redondeados */
+    
 }
 
 /* Cada ítem de servicio */
@@ -172,13 +171,14 @@ section {
     text-align: left; /* Alinea el texto a la izquierda dentro del ítem */
     display: flex; /* Usa flexbox para alinear los íconos y el texto */
     align-items: center; /* Centra verticalmente el contenido */
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Bordes redondeados */
 }
 
 /* Iconos de servicio */
 .services i {
     margin-right: 10px; /* Espacio a la derecha del ícono */
     color: #007BFF; /* Color de los íconos (ajusta según tu diseño) */
-}
 }
 
 /* Ajustes para pantallas más pequeñas */
