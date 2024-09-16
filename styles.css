@@ -162,6 +162,8 @@ section {
     list-style: none; /* Elimina los bullets */
     padding: 0; /* Elimina el padding */
     margin: 0; /* Elimina el margen */
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Bordes redondeados */
 }
 
 /* Cada ítem de servicio */
