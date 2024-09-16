@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartamentos en Alquiler</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Explora nuestros modernos apartamentos en alquiler en el corazón de la ciudad. Encuentra el lugar perfecto para tu estancia con imágenes detalladas y descripciones.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     
+</head>
+<body>
+    
+    <!-- Encabezado -->
+   <header>
+        <h1>Apartamentos en Alquiler</h1>
+        <button class="menu-toggle" aria-label="Toggle Navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+            </ul>
+        </nav>
+    </header>
