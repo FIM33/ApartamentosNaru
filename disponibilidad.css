@@ -1,17 +1,4 @@
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
 
-        h1 {
-            color: #333;
-            margin-top: 20px;
-            font-size: 2em;
-            padding: 0 10px; /* Espacio lateral en móviles */
-        }
 
         .calendar-container {
             margin: 20px auto;
