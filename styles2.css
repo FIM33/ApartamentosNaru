@@ -67,7 +67,6 @@ header {
     padding: 0; /* Elimina el padding predeterminado del header */
 }
 
-/* Estilo del botón de menú */
 .menu-toggle {
     background: none; /* Sin fondo */
     border: none; /* Sin borde */
@@ -75,9 +74,9 @@ header {
     font-size: 24px; /* Tamaño del ícono del menú */
     cursor: pointer; /* Cursor en forma de puntero */
     position: absolute; /* Posicionamiento absoluto */
-    right: 10%; /* Espacio desde el borde derecho del header */
-    bottom: 10%  ; /* Espacio desde el borde inferior del header */
-    z-index: 10; /* Asegura que el botón esté por encima del menú y de la imagen */
+    right: 20px; /* Espacio desde el borde derecho del header */
+    bottom: 20px; /* Espacio desde el borde inferior del header */
+    z-index: 10; /* Asegura que el botón esté encima del menú */
 }
 
 /* Estilos para el menú de navegación */
