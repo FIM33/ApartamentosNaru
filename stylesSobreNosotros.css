@@ -1,0 +1,36 @@
+  /* H1 sobre las imágenes */
+header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el texto en el medio de la pantalla */
+    color: white; /* Color del texto */
+    font-size: 3rem; /* Tamaño del texto, ajusta según necesites */
+    z-index: 10; /* Asegura que esté por encima de las imágenes */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Añade sombra al texto para mejor visibilidad */
+}
+
+/* Estilo para las imágenes en el carrusel */
+.image-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra todo el espacio del contenedor */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Oculta las imágenes por defecto */
+    transition: opacity 1s ease-in-out;
+}
+
+.slider-image.active {
+    opacity: 1; /* Solo la imagen activa será visible */
+} 
