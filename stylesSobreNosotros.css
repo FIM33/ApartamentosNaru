@@ -2,7 +2,7 @@
 .image-slider {
     position: relative; /* Cambia a relative para que los elementos hijos se posicionen correctamente */
     width: 100%;
-    height: 100vh; /* Usa la altura completa de la ventana del navegador, ajusta según necesites */
+    height: 50vh; /* Usa la altura completa de la ventana del navegador, ajusta según necesites */
     overflow: hidden; /* Asegura que nada fuera del contenedor sea visible */
 }
 
