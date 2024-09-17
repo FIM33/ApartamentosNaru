@@ -82,9 +82,9 @@ header {
 
 /* Estilos para el menú de navegación */
 .nav-menu {
-    position: absolute; /* Posicionamiento absoluto para que se despliegue desde el botón */
+    position: absolute; /* Posicionamiento absoluto */
     right: 20px; /* Alinea el menú al borde derecho del encabezado */
-    top: calc(100% + 10px); /* Despliega el menú hacia abajo desde el botón con un pequeño margen */
+    top: 100%; /* Espacio desde el borde inferior del encabezado */
     background: #007BFF; /* Fondo azul */
     border: 1px solid #ddd; /* Borde gris claro */
     border-radius: 8px; /* Bordes redondeados */
@@ -93,9 +93,8 @@ header {
     opacity: 0; /* Comienza oculto */
     visibility: hidden; /* Oculta visualmente pero sin eliminar del flujo del documento */
     max-height: 0; /* Comienza con altura 0 */
-   
+    overflow: hidden; /* Oculta el contenido que desborda */
     transition: opacity 0.3s ease, max-height 0.3s ease, visibility 0.3s ease; /* Transiciones para opacidad, visibilidad y altura */
-    z-index: 15; /* Asegura que el menú esté por encima del carrusel */
 }
 
 /* Menú visible */
@@ -104,7 +103,6 @@ header {
     visibility: visible; /* Hace visible el menú */
     max-height: 500px; /* Ajusta la altura máxima del menú cuando es visible */
 }
-
 /* Estilo para los ítems del menú */
 .nav-menu ul {
     list-style: none; /* Elimina los bullets */
