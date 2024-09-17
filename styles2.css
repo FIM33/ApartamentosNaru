@@ -76,15 +76,15 @@ header {
     cursor: pointer; /* Cursor en forma de puntero */
     position: absolute; /* Posicionamiento absoluto */
     right: 20px; /* Espacio desde el borde derecho del header */
-    top: 20px; /* Espacio desde el borde superior del header */
-    z-index: 10; /* Asegura que el botón esté por encima del menú */
+    bottom: 20px; /* Espacio desde el borde inferior del header */
+    z-index: 10; /* Asegura que el botón esté por encima del menú y de la imagen */
 }
 
 /* Estilos para el menú de navegación */
 .nav-menu {
     position: absolute; /* Posicionamiento absoluto para que se despliegue desde el botón */
     right: 20px; /* Alinea el menú al borde derecho del encabezado */
-    top: 60px; /* Espacio desde el borde inferior del botón */
+    top: calc(100% + 10px); /* Despliega el menú hacia abajo desde el botón con un pequeño margen */
     background: #007BFF; /* Fondo azul */
     border: 1px solid #ddd; /* Borde gris claro */
     border-radius: 8px; /* Bordes redondeados */
@@ -127,13 +127,13 @@ header {
 
 /* Añadimos un retraso a cada ítem para que aparezcan en cascada */
 .nav-menu.show ul li:nth-child(1) {
-    transition-delay: 1s;
+    transition-delay: 0.5s;
 }
 .nav-menu.show ul li:nth-child(2) {
-    transition-delay: 2s;
+    transition-delay: 1s;
 }
 .nav-menu.show ul li:nth-child(3) {
-    transition-delay: 3s;
+    transition-delay: 1.5s;
 }
 
 /* Estilo para las cajas de los ítems del menú */
