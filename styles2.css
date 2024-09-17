@@ -93,7 +93,7 @@ header {
     opacity: 0; /* Comienza oculto */
     visibility: hidden; /* Oculta visualmente pero sin eliminar del flujo del documento */
     max-height: 0; /* Comienza con altura 0 */
-    overflow: hidden; /* Oculta el contenido que desborda */
+   
     transition: opacity 0.3s ease, max-height 0.3s ease, visibility 0.3s ease; /* Transiciones para opacidad, visibilidad y altura */
     z-index: 15; /* Asegura que el menú esté por encima del carrusel */
 }
