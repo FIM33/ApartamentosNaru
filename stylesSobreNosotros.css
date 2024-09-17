@@ -1,8 +1,10 @@
 /* Estilo para el contenedor del carrusel */
 .image-slider {
-    position: relative; /* Cambia a relative para que los elementos hijos se posicionen correctamente */
+    position: absolute; /* Posiciona el contenedor de la imagen en relación con el header */
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 50vh; /* Mantiene la altura del 50% de la ventana del navegador */
+    height: 100%; /* Asegura que el contenedor del carrusel ocupe el 100% de la altura del header */
     overflow: hidden; /* Asegura que nada fuera del contenedor sea visible */
 }
 
@@ -11,7 +13,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover; /* Asegura que la imagen cubra todo el espacio del contenedor sin distorsionar */
-    position: absolute;
+    position: absolute; /* Posiciona las imágenes dentro del contenedor */
     top: 0;
     left: 0;
     opacity: 0; /* Oculta las imágenes por defecto */
