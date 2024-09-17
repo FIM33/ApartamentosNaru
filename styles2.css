@@ -14,7 +14,56 @@ body {
     overflow-x: hidden; /* Evita el desbordamiento horizontal */
     text-align: center; /* Centra el texto en todo el body */
 }
+/* Estilo para el contenedor del carrusel */
+.image-slider {
+    position: absolute; /* Posiciona el contenedor de la imagen en relación con el header */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Asegura que el contenedor del carrusel ocupe el 100% de la altura del header */
+    overflow: hidden; /* Asegura que nada fuera del contenedor sea visible */
+}
 
+/* Estilo para las imágenes del carrusel */
+.slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra todo el espacio del contenedor sin distorsionar */
+    position: absolute; /* Posiciona las imágenes dentro del contenedor */
+    top: 0;
+    left: 0;
+    opacity: 0; /* Oculta las imágenes por defecto */
+    transition: opacity 1s ease-in-out;
+}
+
+.slider-image.active {
+    opacity: 1; /* Solo la imagen activa será visible */
+}
+
+/* H1 sobre las imágenes */
+header h1 {
+    position: absolute;
+    bottom: 10%; /* Ajusta la posición desde el borde inferior del contenedor */
+    left: 50%;
+    transform: translateX(-50%); /* Centra el texto horizontalmente */
+    color: white; /* Color del texto */
+    font-size: 2rem; /* Tamaño del texto, ajusta según necesites */
+    z-index: 10; /* Asegura que esté por encima de las imágenes */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Añade sombra al texto para mejor visibilidad */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 0 20px; /* Espacio adicional alrededor del texto */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño del contenedor */
+}
+
+/* Estilo para el header */
+header {
+    margin: 0; /* Elimina el margen predeterminado del header */
+    padding: 0; /* Elimina el padding predeterminado del header */
+    width: 100%; /* Asegura que el header ocupe todo el ancho */
+    height: 50vh; /* Mantiene la altura del 50% de la ventana del navegador */
+    overflow: hidden; /* Asegura que nada fuera del contenedor sea visible */
+    position: relative; /* Asegura que los elementos hijos se posicionen correctamente dentro del header */
+}
 /* Estilo del botón de menú */
 .menu-toggle {
     background: none; /* Sin fondo */
