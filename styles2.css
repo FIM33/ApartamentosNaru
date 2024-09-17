@@ -79,7 +79,7 @@ header {
     z-index: 10; /* Asegura que el botón esté encima del menú */
 }
 
-/* Estilos para el menú de navegación */
+/* Estilo para el menú de navegación */
 .nav-menu {
     position: absolute; /* Posicionamiento absoluto */
     right: 20px; /* Alinea el menú al borde derecho del encabezado */
@@ -102,6 +102,7 @@ header {
     visibility: visible; /* Hace visible el menú */
     max-height: 500px; /* Ajusta la altura máxima del menú cuando es visible */
 }
+
 /* Estilo para los ítems del menú */
 .nav-menu ul {
     list-style: none; /* Elimina los bullets */
