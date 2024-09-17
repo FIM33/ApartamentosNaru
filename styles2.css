@@ -14,6 +14,7 @@ body {
     overflow-x: hidden; /* Evita el desbordamiento horizontal */
     text-align: center; /* Centra el texto en todo el body */
 }
+
 /* Estilo para el contenedor del carrusel */
 .image-slider {
     position: absolute; /* Posiciona el contenedor de la imagen en relación con el header */
@@ -22,6 +23,7 @@ body {
     width: 100%;
     height: 100%; /* Asegura que el contenedor del carrusel ocupe el 100% de la altura del header */
     overflow: hidden; /* Asegura que nada fuera del contenedor sea visible */
+    z-index: 1; /* Asegura que el carrusel esté por debajo del menú */
 }
 
 /* Estilo para las imágenes del carrusel */
@@ -48,7 +50,7 @@ header h1 {
     transform: translateX(-50%); /* Centra el texto horizontalmente */
     color: white; /* Color del texto */
     font-size: 2rem; /* Tamaño del texto, ajusta según necesites */
-    z-index: 10; /* Asegura que esté por encima de las imágenes */
+    z-index: 2; /* Asegura que el texto esté por encima de las imágenes */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Añade sombra al texto para mejor visibilidad */
     text-align: center; /* Centra el texto horizontalmente */
     padding: 0 20px; /* Espacio adicional alrededor del texto */
@@ -57,13 +59,14 @@ header h1 {
 
 /* Estilo para el header */
 header {
-    margin: 0; /* Elimina el margen predeterminado del header */
-    padding: 0; /* Elimina el padding predeterminado del header */
+    position: relative; /* Asegura que los elementos hijos se posicionen correctamente dentro del header */
     width: 100%; /* Asegura que el header ocupe todo el ancho */
     height: 50vh; /* Mantiene la altura del 50% de la ventana del navegador */
     overflow: hidden; /* Asegura que nada fuera del contenedor sea visible */
-    position: relative; /* Asegura que los elementos hijos se posicionen correctamente dentro del header */
+    margin: 0; /* Elimina el margen predeterminado del header */
+    padding: 0; /* Elimina el padding predeterminado del header */
 }
+
 /* Estilo del botón de menú */
 .menu-toggle {
     background: none; /* Sin fondo */
@@ -73,15 +76,15 @@ header {
     cursor: pointer; /* Cursor en forma de puntero */
     position: absolute; /* Posicionamiento absoluto */
     right: 20px; /* Espacio desde el borde derecho del header */
-    bottom: 20px; /* Espacio desde el borde inferior del header */
-    z-index: 10; /* Asegura que el botón esté encima del menú */
+    top: 20px; /* Espacio desde el borde superior del header */
+    z-index: 10; /* Asegura que el botón esté por encima del menú */
 }
 
 /* Estilos para el menú de navegación */
 .nav-menu {
-    position: absolute; /* Posicionamiento absoluto */
+    position: absolute; /* Posicionamiento absoluto para que se despliegue desde el botón */
     right: 20px; /* Alinea el menú al borde derecho del encabezado */
-    top: 100%; /* Espacio desde el borde inferior del encabezado */
+    top: 60px; /* Espacio desde el borde inferior del botón */
     background: #007BFF; /* Fondo azul */
     border: 1px solid #ddd; /* Borde gris claro */
     border-radius: 8px; /* Bordes redondeados */
@@ -92,6 +95,7 @@ header {
     max-height: 0; /* Comienza con altura 0 */
     overflow: hidden; /* Oculta el contenido que desborda */
     transition: opacity 0.3s ease, max-height 0.3s ease, visibility 0.3s ease; /* Transiciones para opacidad, visibilidad y altura */
+    z-index: 15; /* Asegura que el menú esté por encima del carrusel */
 }
 
 /* Menú visible */
@@ -153,16 +157,12 @@ header {
     background-color: #0056b3; /* Fondo azul oscuro al pasar el ratón */
 }
 
-
-
 /* Ajustes para pantallas más pequeñas */
 @media (max-width: 768px) {
     .services-list {
         grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
     }
 }
-
-
 
 /* Pie de página */
 footer {
@@ -196,4 +196,3 @@ footer {
         font-size: 14px; /* Reduce el tamaño de la fuente en móviles */
     }
 }
-
