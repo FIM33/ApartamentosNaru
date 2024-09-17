@@ -48,3 +48,92 @@ header {
     overflow: hidden; /* Asegura que nada fuera del contenedor sea visible */
     position: relative; /* Asegura que los elementos hijos se posicionen correctamente dentro del header */
 }
+/* Estilo del botón de menú */
+.menu-toggle {
+    background: none; /* Sin fondo */
+    border: none; /* Sin borde */
+    color: #007BFF; /* Color del ícono en azul */
+    font-size: 24px; /* Tamaño del ícono del menú */
+    cursor: pointer; /* Cursor en forma de puntero */
+    position: absolute; /* Posicionamiento absoluto */
+    right: 20px; /* Espacio desde el borde derecho del header */
+    bottom: 20px; /* Espacio desde el borde inferior del header */
+    z-index: 10; /* Asegura que el botón esté encima del menú */
+}
+
+/* Estilos para el menú de navegación */
+.nav-menu {
+    position: absolute; /* Posicionamiento absoluto */
+    right: 20px; /* Alinea el menú al borde derecho del encabezado */
+    top: 100%; /* Espacio desde el borde inferior del encabezado */
+    background: #007BFF; /* Fondo azul */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efecto flotante */
+    width: 200px; /* Ancho del menú desplegable */
+    opacity: 0; /* Comienza oculto */
+    visibility: hidden; /* Oculta visualmente pero sin eliminar del flujo del documento */
+    max-height: 0; /* Comienza con altura 0 */
+    overflow: hidden; /* Oculta el contenido que desborda */
+    transition: opacity 0.3s ease, max-height 0.3s ease, visibility 0.3s ease; /* Transiciones para opacidad, visibilidad y altura */
+}
+
+/* Menú visible */
+.nav-menu.show {
+    opacity: 1; /* Hace el menú completamente visible */
+    visibility: visible; /* Hace visible el menú */
+    max-height: 500px; /* Ajusta la altura máxima del menú cuando es visible */
+}
+
+/* Estilo para los ítems del menú */
+.nav-menu ul {
+    list-style: none; /* Elimina los bullets */
+    padding: 0; /* Elimina el padding */
+    margin: 0; /* Elimina el margen */
+}
+
+.nav-menu ul li {
+    margin: 0; /* Elimina el margen */
+    opacity: 0; /* Los ítems empiezan invisibles */
+    transform: translateY(-20px); /* Los ítems están inicialmente movidos hacia arriba */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transición para que aparezcan suavemente */
+}
+
+/* Cuando el menú está visible, los ítems se mostrarán */
+.nav-menu.show ul li {
+    opacity: 1; /* Los ítems serán visibles */
+    transform: translateY(0); /* Los ítems vuelven a su posición original */
+}
+
+/* Añadimos un retraso a cada ítem para que aparezcan en cascada */
+.nav-menu.show ul li:nth-child(1) {
+    transition-delay: 1s;
+}
+.nav-menu.show ul li:nth-child(2) {
+    transition-delay: 2s;
+}
+.nav-menu.show ul li:nth-child(3) {
+    transition-delay: 3s;
+}
+
+/* Estilo para las cajas de los ítems del menú */
+.nav-menu ul li {
+    display: block; /* Asegura que cada ítem ocupe su propio bloque */
+    background: #007BFF; /* Fondo de los ítems */
+    border-radius: 4px; /* Bordes redondeados para cada ítem */
+    transition: background-color 0.3s ease, padding 0.3s ease; /* Transición suave para el fondo y padding */
+}
+
+/* Estilo para los enlaces dentro del menú */
+.nav-menu ul li a {
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+    display: block; /* Hace que el enlace ocupe todo el bloque */
+    padding: 10px 20px; /* Padding interno */
+    transition: background-color 0.3s ease; /* Transición suave para el fondo */
+}
+
+.nav-menu ul li a:hover {
+    background-color: #0056b3; /* Fondo azul oscuro al pasar el ratón */
+}
+
