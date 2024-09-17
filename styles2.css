@@ -20,7 +20,7 @@ body {
 /* H1 sobre las imágenes */
 header h1 {
     position: absolute;
-    bottom: 10%; /* Ajusta la posición desde el borde inferior del contenedor */
+    bottom: 25%; /* Ajusta la posición desde el borde inferior del contenedor */
     left: 50%;
     transform: translateX(-50%); /* Centra el texto horizontalmente */
     color: white; /* Color del texto */
@@ -79,6 +79,7 @@ header {
     top: 20px; /* Espacio desde el borde superior del header */
     z-index: 10; /* Asegura que el botón esté por encima del menú */
 }
+
 
 /* Estilos para el menú de navegación */
 .nav-menu {
