@@ -20,7 +20,7 @@ body {
 /* H1 sobre las imágenes */
 header h1 {
     position: absolute;
-    bottom: 25%; /* Ajusta la posición desde el borde inferior del contenedor */
+    bottom: 50%; /* Ajusta la posición desde el borde inferior del contenedor */
     left: 50%;
     transform: translateX(-50%); /* Centra el texto horizontalmente */
     color: white; /* Color del texto */
