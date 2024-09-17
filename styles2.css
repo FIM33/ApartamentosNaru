@@ -75,8 +75,8 @@ header {
     font-size: 24px; /* Tamaño del ícono del menú */
     cursor: pointer; /* Cursor en forma de puntero */
     position: absolute; /* Posicionamiento absoluto */
-    right: 20px; /* Espacio desde el borde derecho del header */
-    bottom: 20px; /* Espacio desde el borde inferior del header */
+    right: 10%; /* Espacio desde el borde derecho del header */
+    bottom: 10%  ; /* Espacio desde el borde inferior del header */
     z-index: 10; /* Asegura que el botón esté por encima del menú y de la imagen */
 }
 
