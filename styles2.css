@@ -83,9 +83,9 @@ header {
 
 /* Estilos para el menú de navegación */
 .nav-menu {
-    position: absolute; /* Posicionamiento absoluto para que se despliegue desde el botón */
+    position: absolute; /* Posicionamiento absoluto */
     right: 20px; /* Alinea el menú al borde derecho del encabezado */
-    top: 60px; /* Espacio desde el borde inferior del botón */
+    top: 100%; /* Espacio desde el borde inferior del encabezado */
     background: #007BFF; /* Fondo azul */
     border: 1px solid #ddd; /* Borde gris claro */
     border-radius: 8px; /* Bordes redondeados */
@@ -96,7 +96,6 @@ header {
     max-height: 0; /* Comienza con altura 0 */
     overflow: hidden; /* Oculta el contenido que desborda */
     transition: opacity 0.3s ease, max-height 0.3s ease, visibility 0.3s ease; /* Transiciones para opacidad, visibilidad y altura */
-    z-index: 15; /* Asegura que el menú esté por encima del carrusel */
 }
 
 /* Menú visible */
@@ -157,6 +156,7 @@ header {
 .nav-menu ul li a:hover {
     background-color: #0056b3; /* Fondo azul oscuro al pasar el ratón */
 }
+
 
 /* Ajustes para pantallas más pequeñas */
 @media (max-width: 768px) {
