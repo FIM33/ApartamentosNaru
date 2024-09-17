@@ -94,6 +94,7 @@ header {
     max-height: 0; /* Comienza con altura 0 */
     overflow: hidden; /* Oculta el contenido que desborda */
     transition: opacity 0.3s ease, max-height 0.3s ease, visibility 0.3s ease; /* Transiciones para opacidad, visibilidad y altura */
+    z-index: 10;
 }
 
 /* Menú visible */
