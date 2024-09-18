@@ -18,13 +18,15 @@
 /* Estilo general del body */
    /* Fondo de piedra pizarra */
 body {
-    background-color: #2e2e2e; /* Un color oscuro complementario para la piedra pizarra */
-    background-image: url('https://www.transparenttextures.com/patterns/dark-slate.png'); /* Textura de piedra pizarra */
-    background-size: 600px 600px; /* Tamaño de la textura */
+    background-color: #2e2e2e; /* Un color oscuro complementario */
+    background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/dark_wall.png'); /* Textura de pizarra */
+    background-size: cover; /* La textura cubrirá toda la pantalla */
     background-attachment: fixed; /* Mantiene el fondo fijo al hacer scroll */
-    background-repeat: repeat; /* Repite la textura a lo largo de toda la página */
+    background-repeat: no-repeat; /* No repite la textura, ya que cubre toda la pantalla */
     margin: 0;
     padding: 0;
+}
+
 }
 /* Estilos para el encabezado (header) */
 header {
