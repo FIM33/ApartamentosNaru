@@ -16,15 +16,24 @@
 }
 
 /* Estilo general del body */
-/* Fondo rústico y elegante con textura aplicada a todo */
+   /* Fondo de piedra pizarra */
 body {
-    background-color: #f4e9dc; /* Color base cálido, tipo lino */
-    background-image: url('https://www.transparenttextures.com/patterns/white-wall.png'); /* Textura suave */
-    background-size: 600px 600px; /* Tamaño para que la textura no sea demasiado grande ni pequeña */
-    background-attachment: fixed; /* El fondo permanece fijo al hacer scroll */
-    background-repeat: repeat; /* Repetir la textura a lo largo de todo el fondo */
+    background-color: #2e2e2e; /* Un color oscuro complementario para la piedra pizarra */
+    background-image: url('https://www.transparenttextures.com/patterns/dark-slate.png'); /* Textura de piedra pizarra */
+    background-size: 600px 600px; /* Tamaño de la textura */
+    background-attachment: fixed; /* Mantiene el fondo fijo al hacer scroll */
+    background-repeat: repeat; /* Repite la textura a lo largo de toda la página */
     margin: 0;
     padding: 0;
+}
+
+/* Asegura que todos los elementos usen este fondo */
+* {
+    background-color: inherit; /* Aplica el color de fondo a todos los elementos */
+    background-image: inherit; /* Aplica la textura de piedra pizarra */
+    background-size: inherit; /* Ajusta el tamaño de la textura */
+}
+
 }
 /* Estilos para el encabezado (header) */
 header {
