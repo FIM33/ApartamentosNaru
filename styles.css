@@ -26,15 +26,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
-/* Asegura que todos los elementos usen este fondo */
-* {
-    background-color: inherit; /* Aplica el color de fondo a todos los elementos */
-    background-image: inherit; /* Aplica la textura de piedra pizarra */
-    background-size: inherit; /* Ajusta el tamaño de la textura */
-}
-
-}
 /* Estilos para el encabezado (header) */
 header {
     background-color: #333; /* Color de fondo oscuro */
