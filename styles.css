@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box; /* Asegura que padding y borde no aumenten el tamaño total de los elementos */
    
+}
 
 /* Estilo general del body */
    /* Fondo de piedra pizarra */
@@ -15,7 +16,6 @@ body {
     padding: 0;
 }
 
-}
 /* Estilos para el encabezado (header) */
 header {
     background-color: #333; /* Color de fondo oscuro */
@@ -39,31 +39,12 @@ h2 {
     position: relative;
 }
 
-h2::before {
- 
-    font-size: 1rem; /* Tamaño del adorno */
-    position: absolute;
-    top: -20px; /* Posiciona la flor encima del h1 */
-    left: 50%;
-    transform: translateX(-50%);
-    color: #8e6b50; /* Un marrón más claro y natural */
-}
 
-}
+
 /* Estilo de párrafos acogedores y elegantes */
 p {
-    font-family: 'Merriweather', serif; /* Fuente serif rústica pero amigable para leer */
-    font-size: 1.125rem; /* Tamaño moderado para una lectura fácil */
-    color: #5d4037; /* Marrón cálido, evocando madera y naturaleza */
-    line-height: 1.8; /* Espaciado entre líneas para mayor legibilidad */
-    margin: 0 auto 20px auto; /* Espaciado entre párrafos */
-    max-width: 700px; /* Limita el ancho del texto */
-    text-align: justify; /* Justificación para aspecto limpio y elegante */
-    padding: 0 15px; /* Espaciado interno para mayor comodidad visual */
-    background-color: #f9f4ef; /* Fondo suave y claro para mayor contraste y calidez */
   
-
-}
+  }
 
 
 /* Estilo del botón de menú */
