@@ -26,12 +26,36 @@ header {
     position: relative; /* Posicionamiento relativo para permitir el uso de posicionamiento absoluto en elementos hijos */
 }
 
-/* Título dentro del header */
-header h1 {
-    margin: 0; /* Elimina el margen superior e inferior */
-    text-align: center; /* Centra el texto dentro del header */
-    flex: 1; /* Ocupa el espacio disponible para alinear otros elementos */
+
+/* Estilo del h1 con efecto rural, elegante */
+h1 {
+    font-family: 'Playfair Display', serif; /* Fuente serif para un toque elegante y rural */
+    font-size: 3rem; /* Tamaño grande para un encabezado destacado */
+    color: #4B3F30; /* Color marrón oscuro que evoca lo rural */
+    text-align: center; /* Centra el texto */
+    text-transform: uppercase; /* Convierte el texto en mayúsculas para mayor impacto */
+    letter-spacing: 2px; /* Espaciado entre letras para un look sofisticado */
+    margin-bottom: 20px; /* Espacio debajo del h1 */
+    position: relative; /* Necesario para el pseudo-elemento */
+    padding-bottom: 10px; /* Espacio debajo del texto */
 }
+
+h1::after {
+    content: ''; /* Crea un pseudo-elemento para la línea debajo del texto */
+    position: absolute;
+    width: 100px; /* Ancho de la línea */
+    height: 2px; /* Altura de la línea */
+    background-color: #4B3F30; /* Color de la línea */
+    bottom: 0; /* Posición debajo del texto */
+    left: 50%; /* Centra la línea horizontalmente */
+    transform: translateX(-50%); /* Ajusta para que quede perfectamente centrado */
+    transition: width 0.5s ease-in-out; /* Transición para efecto suave al pasar el mouse */
+}
+
+h1:hover::after {
+    width: 150px; /* Cambia el ancho de la línea al pasar el mouse */
+}
+
  .image-slider {
             position: relative;
             width: 100%; /* Ajusta el ancho de acuerdo a tu necesidad */
