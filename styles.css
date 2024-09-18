@@ -9,7 +9,7 @@
 body {
     font-family: 'Georgia', serif; /* Fuente serif elegante */
     background-color: #2e2e2e; /* Color oscuro de fondo complementario */
-    background-image: url('images/wood-texture.jpg'); /* Ruta a tu imagen de fondo */
+    background-image: url('fondo.jpg'); /* Ruta a tu imagen de fondo */
     background-size: cover; /* Que el fondo cubra toda la pantalla */
     background-attachment: fixed; /* Que el fondo no se mueva al hacer scroll */
     background-position: center; /* Centrar la imagen */
