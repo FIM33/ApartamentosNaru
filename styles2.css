@@ -167,27 +167,6 @@ header {
         grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
     }
 }
-/* Botón de disponibilidad */
-.availability-button {
-    text-align: center; /* Centra el botón */
-    margin-top: 20px; /* Margen superior */
-}
-
-.availability-button .button {
-    display: inline-block; /* El botón se comporta como un bloque en línea */
-    background-color: #007BFF; /* Fondo azul */
-    color: white; /* Texto blanco */
-    padding: 0.75rem 1.5rem; /* Padding interno */
-    font-size: 16px; /* Tamaño de la fuente */
-    font-weight: bold; /* Texto en negrita */
-    text-decoration: none; /* Elimina el subrayado */
-    border-radius: 5px; /* Bordes redondeados */
-    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
-}
-
-.availability-button .button:hover {
-    background-color: #0056b3; /* Cambia el fondo al pasar el ratón */
-}
 
 
 /* Pie de página */
