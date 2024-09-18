@@ -26,14 +26,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
-/* Asegura que todos los elementos usen este fondo */
-* {
-    background-color: inherit; /* Aplica el color de fondo a todos los elementos */
-    background-image: inherit; /* Aplica la textura a todos los elementos */
-    background-size: inherit; /* Aplica el tamaño del fondo a todos los elementos */
-}
-
 /* Estilos para el encabezado (header) */
 header {
     background-color: #333; /* Color de fondo oscuro */
@@ -50,7 +42,6 @@ header {
 h2 {
     font-family: 'Cinzel Decorative', serif; /* Fuente con un estilo decorativo rústico */
     font-size: 2.5rem; /* Tamaño adecuado para destacar sin ser agresivo */
-    color: #3e2723; /* Un marrón profundo y cálido, evocando la tierra y lo rural */
     text-align: center; /* Centra el texto */
     margin-bottom: 15px; /* Espacio debajo del h1 */
     letter-spacing: 1px; /* Pequeño espaciado entre letras */
@@ -59,7 +50,7 @@ h2 {
 }
 
 h2::before {
-    content: '✿'; /* Adorno de flor */
+ 
     font-size: 1rem; /* Tamaño del adorno */
     position: absolute;
     top: -20px; /* Posiciona la flor encima del h1 */
@@ -67,13 +58,7 @@ h2::before {
     transform: translateX(-50%);
     color: #8e6b50; /* Un marrón más claro y natural */
 }
-h2:after {
-    content: ''; /* Crea una línea debajo del texto */
-    display: block;
-    width: 50px; /* Ancho de la línea */
-    height: 2px;
-    background-color: #8e6b50; /* Color marrón claro */
-    margin: 10px auto 0; /* Centrado debajo del texto */
+
 }
 /* Estilo de párrafos acogedores y elegantes */
 p {
@@ -86,10 +71,7 @@ p {
     text-align: justify; /* Justificación para aspecto limpio y elegante */
     padding: 0 15px; /* Espaciado interno para mayor comodidad visual */
     background-color: #f9f4ef; /* Fondo suave y claro para mayor contraste y calidez */
-    border-left: 5px solid #8e6b50; /* Borde decorativo para dar un toque rústico */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera para un toque de elegancia */
-    border-radius: 5px; /* Bordes suavemente redondeados */
-}
+  
 
 }
 
