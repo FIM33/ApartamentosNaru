@@ -1,19 +1,7 @@
 /* Estilo general para todos los elementos */
 * {
     box-sizing: border-box; /* Asegura que padding y borde no aumenten el tamaño total de los elementos */
-    /* Fondo rústico y elegante */
-
-    background-color: #f4e9dc; /* Color de fondo cálido, similar a la madera clara o lino */
-    background-image: url('https://www.transparenttextures.com/patterns/linen.png'); /* Textura ligera de lino */
-    background-size: 400px 400px; /* Tamaño de la textura para que no sea abrumadora */
-    background-attachment: fixed; /* Hace que el fondo permanezca fijo al hacer scroll */
-    background-repeat: repeat; /* La textura se repite en el fondo */
-    margin: 0;
-    padding: 0;
-    background-color: inherit; /* Aplica el color de fondo a todos los elementos */
-    background-image: inherit; /* Aplica la textura a todos los elementos */
-    background-size: inherit; /* Aplica el tamaño del fondo a todos los elementos */
-}
+   
 
 /* Estilo general del body */
    /* Fondo de piedra pizarra */
