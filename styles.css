@@ -10,6 +10,9 @@
     background-repeat: repeat; /* La textura se repite en el fondo */
     margin: 0;
     padding: 0;
+    background-color: inherit; /* Aplica el color de fondo a todos los elementos */
+    background-image: inherit; /* Aplica la textura a todos los elementos */
+    background-size: inherit; /* Aplica el tamaño del fondo a todos los elementos */
 }
 
 /* Estilo general del body */
