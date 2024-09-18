@@ -16,8 +16,8 @@ body {
     background-repeat: no-repeat; /* Evitar que el fondo se repita */
     color: #ffffff; /* Color de texto blanco para buena legibilidad */
     line-height: 1.6; /* Espaciado entre líneas */
-    min-height: 60vh; /* Asegurar que cubra la pantalla */
-    padding: 20px; /* Espacio alrededor del contenido */
+    height: 100%; /* Asegurar que cubra la pantalla */
+
 }
 
 /* ----- ENCABEZADOS ----- */
