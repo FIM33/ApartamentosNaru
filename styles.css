@@ -13,15 +13,22 @@
 }
 
 /* Estilo general del body */
+/* Fondo rústico y elegante con textura aplicada a todo */
 body {
-    font-family: Arial, sans-serif; /* Fuente general del documento */
-    line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
-    margin: 0; /* Elimina el margen predeterminado del body */
-    padding: 0; /* Elimina el padding predeterminado del body */
-    background-color: #f4f4f4; /* Fondo gris claro */
-    padding-bottom: 60px; /* Añade espacio para el pie de página */
-    overflow-x: hidden; /* Evita el desbordamiento horizontal */
-    text-align: center; /* Centra el texto en todo el body */
+    background-color: #f4e9dc; /* Color base cálido, tipo lino */
+    background-image: url('https://www.transparenttextures.com/patterns/white-wall.png'); /* Textura suave */
+    background-size: 600px 600px; /* Tamaño para que la textura no sea demasiado grande ni pequeña */
+    background-attachment: fixed; /* El fondo permanece fijo al hacer scroll */
+    background-repeat: repeat; /* Repetir la textura a lo largo de todo el fondo */
+    margin: 0;
+    padding: 0;
+}
+
+/* Asegura que todos los elementos usen este fondo */
+* {
+    background-color: inherit; /* Aplica el color de fondo a todos los elementos */
+    background-image: inherit; /* Aplica la textura a todos los elementos */
+    background-size: inherit; /* Aplica el tamaño del fondo a todos los elementos */
 }
 
 /* Estilos para el encabezado (header) */
