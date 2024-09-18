@@ -29,44 +29,49 @@ header {
 
 /* Estilo del h1 con efecto rural, elegante */
 h2 {
-    font-family: 'Playfair Display', serif; /* Fuente serif para un toque elegante y rural */
-    font-size: 3rem; /* Tamaño grande para un encabezado destacado */
-    color: #4B3F30; /* Color marrón oscuro que evoca lo rural */
+    font-family: 'Cinzel Decorative', serif; /* Fuente con un estilo decorativo rústico */
+    font-size: 2.5rem; /* Tamaño adecuado para destacar sin ser agresivo */
+    color: #3e2723; /* Un marrón profundo y cálido, evocando la tierra y lo rural */
     text-align: center; /* Centra el texto */
-    text-transform: uppercase; /* Convierte el texto en mayúsculas para mayor impacto */
-    letter-spacing: 2px; /* Espaciado entre letras para un look sofisticado */
-    margin-bottom: 20px; /* Espacio debajo del h1 */
-    position: relative; /* Necesario para el pseudo-elemento */
-    padding-bottom: 10px; /* Espacio debajo del texto */
+    margin-bottom: 15px; /* Espacio debajo del h1 */
+    letter-spacing: 1px; /* Pequeño espaciado entre letras */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil para dar profundidad */
+    position: relative;
 }
 
-h2::after {
-    content: ''; /* Crea un pseudo-elemento para la línea debajo del texto */
+h2::before {
+    content: '✿'; /* Adorno de flor */
+    font-size: 1rem; /* Tamaño del adorno */
     position: absolute;
-    width: 100px; /* Ancho de la línea */
-    height: 2px; /* Altura de la línea */
-    background-color: #4B3F30; /* Color de la línea */
-    bottom: 0; /* Posición debajo del texto */
-    left: 50%; /* Centra la línea horizontalmente */
-    transform: translateX(-50%); /* Ajusta para que quede perfectamente centrado */
-    transition: width 0.5s ease-in-out; /* Transición para efecto suave al pasar el mouse */
+    top: -20px; /* Posiciona la flor encima del h1 */
+    left: 50%;
+    transform: translateX(-50%);
+    color: #8e6b50; /* Un marrón más claro y natural */
+}
+h2:after {
+    content: ''; /* Crea una línea debajo del texto */
+    display: block;
+    width: 50px; /* Ancho de la línea */
+    height: 2px;
+    background-color: #8e6b50; /* Color marrón claro */
+    margin: 10px auto 0; /* Centrado debajo del texto */
+}
+/* Estilo de párrafos acogedores y elegantes */
+p {
+    font-family: 'Merriweather', serif; /* Fuente serif rústica pero amigable para leer */
+    font-size: 1.125rem; /* Tamaño moderado para una lectura fácil */
+    color: #5d4037; /* Marrón cálido, evocando madera y naturaleza */
+    line-height: 1.8; /* Espaciado entre líneas para mayor legibilidad */
+    margin: 0 auto 20px auto; /* Espaciado entre párrafos */
+    max-width: 700px; /* Limita el ancho del texto */
+    text-align: justify; /* Justificación para aspecto limpio y elegante */
+    padding: 0 15px; /* Espaciado interno para mayor comodidad visual */
+    background-color: #f9f4ef; /* Fondo suave y claro para mayor contraste y calidez */
+    border-left: 5px solid #8e6b50; /* Borde decorativo para dar un toque rústico */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera para un toque de elegancia */
+    border-radius: 5px; /* Bordes suavemente redondeados */
 }
 
-h2:hover::after {
-    width: 150px; /* Cambia el ancho de la línea al pasar el mouse */
-}
-/* Estilo para párrafos elegantes y profesionales */
-p {
-    font-family: 'Georgia', serif; /* Fuente serif para mantener el estilo rural y profesional */
-    font-size: 1.125rem; /* Tamaño de fuente para una lectura cómoda */
-    color: #333; /* Color gris oscuro para una lectura agradable */
-    line-height: 1.8; /* Espaciado entre líneas generoso para mejor legibilidad */
-    margin: 0 auto 20px auto; /* Espaciado vertical entre párrafos y centrado automático */
-    max-width: 700px; /* Limita el ancho del texto para evitar líneas muy largas */
-    text-align: justify; /* Justifica el texto para un aspecto más limpio y formal */
-    word-spacing: 0.05em; /* Espaciado entre palabras para mejorar la legibilidad */
-    hyphens: none; /* Evita los guiones automáticos */
-    overflow-wrap: break-word; /* Rompe las palabras largas si es necesario */
 }
 
 
