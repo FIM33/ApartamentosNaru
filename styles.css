@@ -69,12 +69,10 @@ header h1 {
             opacity: 1;
         }
 
-/* Estilo del botón de menú */
 .menu-toggle {
-    background: #007BFF; /* fondo azul*/
+    background: none; /* Sin fondo */
     border: none; /* Sin borde */
-    border-radius: 8px; /* Bordes redondeados */
-    color: #fff; /* Color del ícono en blanco */
+    color: #007BFF; /* Color del ícono en azul */
     font-size: 24px; /* Tamaño del ícono del menú */
     cursor: pointer; /* Cursor en forma de puntero */
     position: absolute; /* Posicionamiento absoluto */
@@ -82,11 +80,10 @@ header h1 {
     bottom: 20px; /* Espacio desde el borde inferior del header */
     z-index: 10; /* Asegura que el botón esté encima del menú */
 }
-.
 
-/* Estilos para el menú de navegación */
+/* Estilo para el menú de navegación */
 .nav-menu {
-   position: absolute; /* Posicionamiento absoluto */
+    position: absolute; /* Posicionamiento absoluto */
     right: 20px; /* Alinea el menú al borde derecho del encabezado */
     top: 100%; /* Espacio desde el borde inferior del encabezado */
     background: #007BFF; /* Fondo azul */
@@ -99,7 +96,9 @@ header h1 {
     max-height: 0; /* Comienza con altura 0 */
     overflow: hidden; /* Oculta el contenido que desborda */
     transition: opacity 0.3s ease, max-height 0.3s ease, visibility 0.3s ease; /* Transiciones para opacidad, visibilidad y altura */
+    z-index: 10;
 }
+
 /* Menú visible */
 .nav-menu.show {
     opacity: 1; /* Hace el menú completamente visible */
@@ -129,13 +128,13 @@ header h1 {
 
 /* Añadimos un retraso a cada ítem para que aparezcan en cascada */
 .nav-menu.show ul li:nth-child(1) {
-    transition-delay: 1s;
+    transition-delay: 0.5s;
 }
 .nav-menu.show ul li:nth-child(2) {
-    transition-delay: 2s;
+    transition-delay: 1s;
 }
 .nav-menu.show ul li:nth-child(3) {
-    transition-delay: 3s;
+    transition-delay: 1.5s;
 }
 
 /* Estilo para las cajas de los ítems del menú */
