@@ -73,13 +73,19 @@ header h1 {
     background: linear-gradient(135deg, #e6e6e6 25%, #c0c0c0 50%, #e6e6e6 75%, #c0c0c0 100%);
     border: none; /* Sin borde */
     border-radius: 8px;
-    color:  #333; /* Color del ícono en azul */
+    color:  #333; /* Color del ícono en gris */
     font-size: 24px; /* Tamaño del ícono del menú */
     cursor: pointer; /* Cursor en forma de puntero */
     position: absolute; /* Posicionamiento absoluto */
     right: 20px; /* Espacio desde el borde derecho del header */
     bottom: 20px; /* Espacio desde el borde inferior del header */
     z-index: 10; /* Asegura que el botón esté encima del menú */
+}
+.menu-toggle.active {
+    background: linear-gradient(135deg, #c0c0c0 25%, #a9a9a9 50%, #c0c0c0 75%, #a9a9a9 100%); /* Grises más oscuros para efecto activo */
+    color: #fff; /* Cambiar el color del ícono a blanco */
+    transform: translateY(-2px); /* Elevar ligeramente el botón */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para profundidad */
 }
 
 
