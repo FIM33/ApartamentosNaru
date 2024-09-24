@@ -70,7 +70,7 @@ header h1 {
         }
 
 .menu-toggle {
-    background: #007BFF; /* Sin fondo */
+    background: linear-gradient(135deg, #e6e6e6 25%, #c0c0c0 50%, #e6e6e6 75%, #c0c0c0 100%);
     border: none; /* Sin borde */
     border-radius: 8px;
     color: #fff; /* Color del ícono en azul */
@@ -133,19 +133,7 @@ header h1 {
     transform: translateY(0); /* Los ítems vuelven a su posición original */
 }
 
-/* Añadimos un retraso a cada ítem para que aparezcan en cascada */
-.nav-menu.show ul li:nth-child(1) {
-    transition-delay: 1s;
-}
-.nav-menu.show ul li:nth-child(2) {
-    transition-delay: 2s;
-}
-.nav-menu.show ul li:nth-child(3) {
-    transition-delay: 3s;
-}
-.nav-menu.show ul li:nth-child(4) {
-    transition-delay: 4s;
-}
+
 
 /* Estilo para las cajas de los ítems del menú */
 .nav-menu ul li {
