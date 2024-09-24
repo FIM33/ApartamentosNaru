@@ -71,9 +71,9 @@ header h1 {
 
 /* Estilo del botón de menú */
 .menu-toggle {
-    background: none; /* Sin fondo */
+    background: #007BFF; /* fondo azul*/
     border: none; /* Sin borde */
-    color: #007BFF; /* Color del ícono en azul */
+    color: #fff; /* Color del ícono en blanco */
     font-size: 24px; /* Tamaño del ícono del menú */
     cursor: pointer; /* Cursor en forma de puntero */
     position: absolute; /* Posicionamiento absoluto */
@@ -174,7 +174,7 @@ section {
     color: white; /* Color del texto */
     padding: 20px; /* Espacio alrededor del texto */
     display: inline-block; /* Para que el fondo se ajuste al tamaño del texto */
-    background: linear-gradient(90deg, #ff6f61, #ffcc4c); /* Gradiente de colores como si fuera rotulador */
+    background: linear-gradient(90deg, #007BFF, #66B2FF); /* Gradiente de colores azules */
     border-radius: 5px; /* Bordes redondeados */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra al texto */
