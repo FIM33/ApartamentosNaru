@@ -168,7 +168,8 @@ section {
     max-width: 1200px; /* Ancho máximo de 1200px */
     width: 100%; /* Asegura que la sección no exceda el ancho de su contenedor */
     box-sizing: border-box; /* Incluye el padding en el ancho total */
-     h2 {
+    }
+ h2 {
     font-size: 2em; /* Ajusta el tamaño de la fuente */
     color: white; /* Color del texto */
     padding: 20px; /* Espacio alrededor del texto */
@@ -180,7 +181,6 @@ section {
 }
 
 
-}
 
 /* Estilos del carrusel */
 .carousel {
