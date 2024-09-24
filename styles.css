@@ -33,7 +33,7 @@ header h1 {
     flex: 1; /* Ocupa el espacio disponible para alinear otros elementos */
  
     font-family: 'Playfair Display', serif;
-    color: #fff;
+    color: #f0e68c;
     text-align: center;
     position: relative;
     margin-bottom: 20px;
