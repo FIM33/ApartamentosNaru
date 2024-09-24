@@ -178,7 +178,17 @@ section {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra al texto */
 }
-    
+
+    p{
+        font-family: 'Arial', sans-serif; /* Tipografía agradable */
+    font-size: 16px; /* Tamaño de fuente */
+    line-height: 1.6; /* Espaciado entre líneas */
+    color: #333; /* Color del texto */
+    margin: 15px 0; /* Espacio arriba y abajo del párrafo */
+    padding: 10px; /* Espacio interno */
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidad */}
 }
 
 /* Estilos del carrusel */
