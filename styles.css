@@ -73,7 +73,7 @@ header h1 {
     background: linear-gradient(135deg, #e6e6e6 25%, #c0c0c0 50%, #e6e6e6 75%, #c0c0c0 100%);
     border: none; /* Sin borde */
     border-radius: 8px;
-    color: #fff; /* Color del ícono en azul */
+    color:  #333; /* Color del ícono en azul */
     font-size: 24px; /* Tamaño del ícono del menú */
     cursor: pointer; /* Cursor en forma de puntero */
     position: absolute; /* Posicionamiento absoluto */
