@@ -70,9 +70,9 @@ header h1 {
         }
 
 .menu-toggle {
-    background: none; /* Sin fondo */
+    background: #007BFF; /* Sin fondo */
     border: none; /* Sin borde */
-    color: #007BFF; /* Color del ícono en azul */
+    color: #fff; /* Color del ícono en azul */
     font-size: 24px; /* Tamaño del ícono del menú */
     cursor: pointer; /* Cursor en forma de puntero */
     position: absolute; /* Posicionamiento absoluto */
