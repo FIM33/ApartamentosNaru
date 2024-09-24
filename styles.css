@@ -72,7 +72,7 @@ header h1 {
 /* Estilo del botón de menú */
 .menu-toggle {
     background: #007BFF; /* fondo azul*/
-    border: 1px solid  #007BFF; /* Borde azul */
+    border: none; /* Sin borde */
     border-radius: 8px; /* Bordes redondeados */
     color: #fff; /* Color del ícono en blanco */
     font-size: 24px; /* Tamaño del ícono del menú */
@@ -82,11 +82,7 @@ header h1 {
     bottom: 20px; /* Espacio desde el borde inferior del header */
     z-index: 10; /* Asegura que el botón esté encima del menú */
 }
-.menu-toggle{
-     background-color: #0056b3; /* Fondo azul oscuro al pasar el ratón */
-    color: #007BFF; /* Color del ícono en azul */
-    
-}
+.
 
 /* Estilos para el menú de navegación */
 .nav-menu {
