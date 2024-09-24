@@ -1,150 +1,288 @@
-/* ----- RESET BÁSICO ----- */
+/* Estilo general para todos los elementos */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Asegura que padding y borde no aumenten el tamaño total de los elementos */
 }
 
-/* ----- ESTILOS GENERALES ----- */
+/* Estilo general del body */
 body {
-    font-family: 'Arial', sans-serif; /* Fuente general legible */
-    background-image: url('piedratextura.jpg'); /* Textura de piedra para el fondo */
-    background-size: cover; /* La imagen de fondo cubrirá todo */
-    background-attachment: fixed; /* Fondo fijo para un efecto elegante */
-    color: #eaeaea; /* Color general del texto */
-    line-height: 1.6;
+    font-family: Arial, sans-serif; /* Fuente general del documento */
+    line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
+    margin: 0; /* Elimina el margen predeterminado del body */
+    padding: 0; /* Elimina el padding predeterminado del body */
+    background-color: #f4f4f4; /* Fondo gris claro */
+    padding-bottom: 60px; /* Añade espacio para el pie de página */
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+    text-align: center; /* Centra el texto en todo el body */
 }
 
-/* ----- ENCABEZADOS ----- */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif; /* Tipografía moderna y llamativa */
-    color: #fff; /* Texto blanco */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra elegante en los textos */
-    margin-bottom: 20px;
+/* Estilos para el encabezado (header) */
+header {
+    background-color: #333; /* Color de fondo oscuro */
+    color: #fff; /* Color del texto en blanco */
+    display: flex; /* Usa flexbox para organizar el contenido en el header */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    padding: 20px; /* Padding de 20px alrededor del header */
+    position: relative; /* Posicionamiento relativo para permitir el uso de posicionamiento absoluto en elementos hijos */
 }
 
-/* Estilo específico para h1 */
-h1 {
-    font-size: 3rem;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
-    padding: 20px;
-    border-radius: 10px;
-    letter-spacing: 2px; /* Espaciado de letras */
+/* Título dentro del header */
+header h1 {
+    margin: 0; /* Elimina el margen superior e inferior */
+    text-align: center; /* Centra el texto dentro del header */
+    flex: 1; /* Ocupa el espacio disponible para alinear otros elementos */
+}
+ .image-slider {
+            position: relative;
+            width: 100%; /* Ajusta el ancho de acuerdo a tu necesidad */
+            height: 400px; /* Ajusta la altura según sea necesario */
+            overflow: hidden;
+        }
+
+        .slider-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease; /* Transición suave de 1 segundo */
+        }
+
+        .slider-image.active {
+            opacity: 1;
+        }
+
+/* Estilo del botón de menú */
+.menu-toggle {
+    background: none; /* Sin fondo */
+    border: none; /* Sin borde */
+    color: #007BFF; /* Color del ícono en azul */
+    font-size: 24px; /* Tamaño del ícono del menú */
+    cursor: pointer; /* Cursor en forma de puntero */
+    position: absolute; /* Posicionamiento absoluto */
+    right: 20px; /* Espacio desde el borde derecho del header */
+    bottom: 20px; /* Espacio desde el borde inferior del header */
+    z-index: 10; /* Asegura que el botón esté encima del menú */
 }
 
-/* Estilo para h2 */
-h2 {
-    font-size: 2.5rem;
-    margin-top: 30px;
-    padding: 15px 0;
-    color: #f5c71a; /* Color dorado */
-    border-bottom: 2px solid #d4af37; /* Línea decorativa debajo */
+/* Estilos para el menú de navegación */
+.nav-menu {
+    position: absolute; /* Posicionamiento absoluto */
+    right: 20px; /* Alinea el menú al borde derecho del encabezado */
+    top: 100%; /* Espacio desde el borde inferior del encabezado */
+    background: #007BFF; /* Fondo azul */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efecto flotante */
+    width: 200px; /* Ancho del menú desplegable */
+    opacity: 0; /* Comienza oculto */
+    visibility: hidden; /* Oculta visualmente pero sin eliminar del flujo del documento */
+    max-height: 0; /* Comienza con altura 0 */
+    overflow: hidden; /* Oculta el contenido que desborda */
+    transition: opacity 0.3s ease, max-height 0.3s ease, visibility 0.3s ease; /* Transiciones para opacidad, visibilidad y altura */
 }
 
-/* ----- PÁRRAFOS ----- */
-p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-    color: #e0e0e0;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
-    padding: 15px;
-    border-radius: 8px;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.8; /* Mejora la legibilidad */
+/* Menú visible */
+.nav-menu.show {
+    opacity: 1; /* Hace el menú completamente visible */
+    visibility: visible; /* Hace visible el menú */
+    max-height: 500px; /* Ajusta la altura máxima del menú cuando es visible */
 }
 
-/* ----- ENLACES ----- */
-a {
-    color: #d4af37;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+/* Estilo para los ítems del menú */
+.nav-menu ul {
+    list-style: none; /* Elimina los bullets */
+    padding: 0; /* Elimina el padding */
+    margin: 0; /* Elimina el margen */
 }
 
-a:hover {
-    color: #f5c71a; /* Color más brillante en hover */
+.nav-menu ul li {
+    margin: 0; /* Elimina el margen */
+    opacity: 0; /* Los ítems empiezan invisibles */
+    transform: translateY(-20px); /* Los ítems están inicialmente movidos hacia arriba */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transición para que aparezcan suavemente */
 }
 
-/* ----- BOTONES ----- */
-button {
-    background-color: #d4af37;
-    color: #fff;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+/* Cuando el menú está visible, los ítems se mostrarán */
+.nav-menu.show ul li {
+    opacity: 1; /* Los ítems serán visibles */
+    transform: translateY(0); /* Los ítems vuelven a su posición original */
 }
 
-button:hover {
-    background-color: #b8972b;
-    transform: scale(1.05); /* Ligero agrandamiento al pasar el ratón */
+/* Añadimos un retraso a cada ítem para que aparezcan en cascada */
+.nav-menu.show ul li:nth-child(1) {
+    transition-delay: 1s;
+}
+.nav-menu.show ul li:nth-child(2) {
+    transition-delay: 2s;
+}
+.nav-menu.show ul li:nth-child(3) {
+    transition-delay: 3s;
 }
 
-/* ----- IMÁGENES ----- */
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra alrededor de las imágenes */
+/* Estilo para las cajas de los ítems del menú */
+.nav-menu ul li {
+    display: block; /* Asegura que cada ítem ocupe su propio bloque */
+    background: #007BFF; /* Fondo de los ítems */
+    border-radius: 4px; /* Bordes redondeados para cada ítem */
+    transition: background-color 0.3s ease, padding 0.3s ease; /* Transición suave para el fondo y padding */
 }
 
-/* ----- CONTENEDORES ----- */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+/* Estilo para los enlaces dentro del menú */
+.nav-menu ul li a {
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+    display: block; /* Hace que el enlace ocupe todo el bloque */
+    padding: 10px 20px; /* Padding interno */
+    transition: background-color 0.3s ease; /* Transición suave para el fondo */
 }
 
-/* ----- PIE DE PÁGINA ----- */
+.nav-menu ul li a:hover {
+    background-color: #0056b3; /* Fondo azul oscuro al pasar el ratón */
+}
+
+
+/* Estilos para las secciones */
+section {
+    background: #fff; /* Fondo blanco */
+    margin: 20px auto; /* Margen automático para centrar horizontalmente */
+    padding: 20px; /* Padding interno */
+    border-radius: 8px; /* Bordes redondeados */
+    max-width: 1200px; /* Ancho máximo de 1200px */
+    width: 100%; /* Asegura que la sección no exceda el ancho de su contenedor */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+/* Estilos del carrusel */
+.carousel {
+    position: relative;
+    margin-bottom: 20px; /* Espacio inferior */
+    overflow: hidden; /* Oculta las imágenes que se salen del contenedor */
+}
+
+.carousel-images {
+    display: flex; /* Alinea las imágenes en fila */
+    transition: transform 0.5s ease; /* Transición suave para cambiar de imagen */
+}
+
+.carousel-image {
+    min-width: 100%; /* Cada imagen ocupa el 100% del ancho del carrusel */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+.carousel-image img {
+    width: 100%; /* Ajusta la imagen al ancho completo del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Asegura que la imagen se muestre como bloque */
+}
+
+/* Controles del carrusel */
+.carousel-controls {
+    text-align: center; /* Centra los controles del carrusel */
+    margin-top: 10px; /* Espacio superior */
+}
+
+.carousel-controls label {
+    cursor: pointer; /* Cursor en forma de puntero */
+    font-size: 24px; /* Tamaño de los controles */
+    color: #007BFF; /* Color azul para los controles */
+    margin: 0 10px; /* Espacio horizontal entre los controles */
+}
+/* Lista de servicios */
+.services ul {
+    display: grid; /* Usa un grid para organizar los elementos */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales en pantallas grandes */
+    gap: 20px; /* Espacio entre los elementos */
+    list-style: none; /* Elimina los bullets */
+    padding: 20px; /* Agrega un padding interno a la lista para que no toquen los bordes */
+    margin: 0; /* Elimina el margen */
+    border: 3px solid #007BFF;
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Cada ítem de servicio */
+.services li {
+    padding: 10px; /* Añade espacio interno entre el contenido y el borde del ítem */
+    margin: 0; /* Elimina márgenes para mantener el layout limpio */
+    display: flex; /* Usa flexbox para alinear los íconos y el texto */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: flex-start; /* Alinea el contenido al inicio horizontalmente */
+    border: 1px solid #ddd; /* Añade un borde para darle estructura a cada ítem */
+    border-radius: 4px; /* Bordes redondeados para cada ítem */
+}
+
+/* Iconos de servicio */
+.services i {
+    margin-right: 15px; /* Ajusta el espacio a la derecha del ícono */
+    color: #007BFF; /* Color de los íconos (ajusta según tu diseño) */
+    font-size: 1.5em; /* Aumenta el tamaño del ícono si es necesario */
+}
+
+/* Texto de servicio */
+.services li span {
+    flex: 1; /* Deja que el texto ocupe todo el espacio disponible */
+    color: #333; /* Color del texto */
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .services-list {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    }
+}
+
+/* Botón de disponibilidad */
+.availability-button {
+    text-align: center; /* Centra el botón */
+    margin-top: 20px; /* Margen superior */
+}
+
+.availability-button .button {
+    display: inline-block; /* El botón se comporta como un bloque en línea */
+    background-color: #007BFF; /* Fondo azul */
+    color: white; /* Texto blanco */
+    padding: 0.75rem 1.5rem; /* Padding interno */
+    font-size: 16px; /* Tamaño de la fuente */
+    font-weight: bold; /* Texto en negrita */
+    text-decoration: none; /* Elimina el subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+.availability-button .button:hover {
+    background-color: #0056b3; /* Cambia el fondo al pasar el ratón */
+}
+
+/* Pie de página */
 footer {
-    background-color: #111;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-    border-top: 2px solid #d4af37; /* Línea superior decorativa */
+    background: #333; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    text-align: center; /* Texto centrado */
+    padding: 20px 10px; /* Padding interno */
+    position: static; /* Posición estática, en su lugar natural */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra superior ligera */
 }
 
-footer p {
-    font-size: 0.9rem;
-    color: #bbb;
-}
-
-footer a {
-    color: #d4af37;
-}
-
-footer a:hover {
-    color: #f5c71a;
-}
-
-/* ----- REDES SOCIALES ----- */
+/* Iconos de redes sociales en el pie de página */
 .social-media a {
-    font-size: 1.5rem;
-    color: #fff;
-    margin: 0 10px;
-    display: inline-block;
-    transition: color 0.3s ease;
+    color: #fff; /* Color blanco */
+    font-size: 48px; /* Tamaño grande de los iconos */
+    text-decoration: none; /* Elimina el subrayado */
+    margin: 0 10px; /* Espacio horizontal entre los iconos */
+    display: inline-block; /* Comportamiento de bloque en línea */
 }
 
 .social-media a:hover {
-    color: #d4af37;
+    color: #e1306c; /* Cambia al color de Instagram al pasar el ratón */
 }
 
-/* ----- AJUSTES PARA PANTALLAS PEQUEÑAS (MÓVILES) ----- */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-    p {
-        font-size: 1rem;
-    }
-    button {
-        padding: 10px 20px;
+/* Ajustes de tamaño para botones en dispositivos móviles */
+@media (max-width: 600px) {
+    .availability-button .button {
+        padding: 0.5rem 1rem; /* Reduce el padding en móviles */
+        font-size: 14px; /* Reduce el tamaño de la fuente en móviles */
     }
 }
