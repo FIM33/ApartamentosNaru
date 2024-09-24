@@ -31,6 +31,19 @@ header h1 {
     margin: 0; /* Elimina el margen superior e inferior */
     text-align: center; /* Centra el texto dentro del header */
     flex: 1; /* Ocupa el espacio disponible para alinear otros elementos */
+ 
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    padding: 10px;
+    /* Sombreado de rotulador */
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.2), 
+                 -4px 4px 0px rgba(0, 0, 0, 0.1), 
+                 -6px 6px 0px rgba(0, 0, 0, 0.05);
+}
+
 }
  .image-slider {
             position: relative;
