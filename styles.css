@@ -274,6 +274,7 @@ p {
 .availability-button {
     text-align: center; /* Centra el botón */
     margin-top: 20px; /* Margen superior */
+    padding: 20px; /* Espacio alrededor del texto */
 }
 
 .availability-button .button {
