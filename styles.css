@@ -72,7 +72,7 @@ header h1 {
 /* Estilo del botón de menú */
 .menu-toggle {
     background: #007BFF; /* fondo azul*/
-    border: 1px solid #ddd; /* Borde gris claro */
+    border: 1px solid  #007BFF; /* Borde azul */
     border-radius: 8px; /* Bordes redondeados */
     color: #fff; /* Color del ícono en blanco */
     font-size: 24px; /* Tamaño del ícono del menú */
