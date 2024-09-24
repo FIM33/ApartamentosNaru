@@ -86,7 +86,7 @@ header h1 {
 
 /* Estilos para el menú de navegación */
 .nav-menu {
-    position: absolute; /* Posicionamiento absoluto */
+   position: absolute; /* Posicionamiento absoluto */
     right: 20px; /* Alinea el menú al borde derecho del encabezado */
     top: 100%; /* Espacio desde el borde inferior del encabezado */
     background: #007BFF; /* Fondo azul */
@@ -100,7 +100,6 @@ header h1 {
     overflow: hidden; /* Oculta el contenido que desborda */
     transition: opacity 0.3s ease, max-height 0.3s ease, visibility 0.3s ease; /* Transiciones para opacidad, visibilidad y altura */
 }
-
 /* Menú visible */
 .nav-menu.show {
     opacity: 1; /* Hace el menú completamente visible */
@@ -214,7 +213,7 @@ p {
 /* Controles del carrusel */
 .carousel-controls {
     text-align: center; /* Centra los controles del carrusel */
-    margin-top: 10px; /* Espacio superior */
+    margin-top: 20px; /* Espacio superior */
 }
 
 .carousel-controls label {
