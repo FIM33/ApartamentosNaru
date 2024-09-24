@@ -81,11 +81,6 @@ header h1 {
     bottom: 20px; /* Espacio desde el borde inferior del header */
     z-index: 10; /* Asegura que el botón esté encima del menú */
 }
-.menu-toggle:active {
-    background: #0056b3; /* Color de fondo cuando se pulsa */
-    transform: scale(0.95); /* Efecto de "aplastar" el botón */
-    color: #e0e0e0; /* Color del icono cuando se pulsa (brillo) */
-}
 
 
 /* Estilo para el menú de navegación */
