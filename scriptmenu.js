@@ -11,3 +11,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+document.getElementById('menuToggle').addEventListener('click', function() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('active'); // Cambia la clase del menú
+
+    // Cambiar la clase del botón según el estado del menú
+    this.classList.toggle('active'); // Alterna la clase 'active' en el botón
+});
