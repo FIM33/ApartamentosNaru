@@ -82,6 +82,11 @@ header h1 {
     bottom: 20px; /* Espacio desde el borde inferior del header */
     z-index: 10; /* Asegura que el botón esté encima del menú */
 }
+.menu-toggle{
+     background-color: #0056b3; /* Fondo azul oscuro al pasar el ratón */
+    color: #007BFF; /* Color del ícono en azul */
+    
+}
 
 /* Estilos para el menú de navegación */
 .nav-menu {
